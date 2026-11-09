@@ -18,6 +18,12 @@ for file in sorted((root/"skills").glob("*/SKILL.md")):
         problems.append(f"{slug}: weak trigger description")
     if len(data)>16000:
         problems.append(f"{slug}: exceeds 16k characters; consider references")
+    for link in re.findall(r'\]\((references/[^)]+)\)', data):
+        target = file.parent / link
+        if not target.is_file():
+            problems.append(f"{slug}: missing packaged reference {link}")
+        elif target.read_bytes() != (root / 'docs' / target.name).read_bytes():
+            problems.append(f"{slug}: stale shared reference; run scripts/sync_skill_references.py")
     for marker in ["## Deliverable","## Deliverables"]:
         if marker in data:
             break
