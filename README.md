@@ -2,7 +2,7 @@
 
 A focused, **framework-aware** library of modular [Agent Skills](https://agentskills.io/specification) for premium web experiences, SaaS dashboards, 3D and 2D animation, and quality engineering.
 
-**12 skills**. Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
+**24 skills**. Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
 
 ## Quick start
 
@@ -39,6 +39,26 @@ A focused, **framework-aware** library of modular [Agent Skills](https://agentsk
 - **Project first**: inspect real repo, actual styles, runtime and rules; avoid destructive rewrites.
 
 Read [quality gates](docs/quality-gates.md), [architecture](docs/architecture.md), [skill evaluation protocol](docs/evaluation.md), [contribution guide](CONTRIBUTING.md) and [security policy](SECURITY.md).
+
+
+## New specialist skills (ecosystem expansion)
+
+- [seo-technical-auditor](skills/seo-technical-auditor/SKILL.md)
+- [seo-structured-data-engineer](skills/seo-structured-data-engineer/SKILL.md)
+- [seo-ai-search-visibility](skills/seo-ai-search-visibility/SKILL.md)
+- [seo-programmatic-architecture](skills/seo-programmatic-architecture/SKILL.md)
+- [seo-content-strategy](skills/seo-content-strategy/SKILL.md)
+- [marketing-analytics-engineer](skills/marketing-analytics-engineer/SKILL.md)
+- [growth-experiment-designer](skills/growth-experiment-designer/SKILL.md)
+- [engineering-tdd-implementer](skills/engineering-tdd-implementer/SKILL.md)
+- [engineering-independent-review](skills/engineering-independent-review/SKILL.md)
+- [product-art-direction](skills/product-art-direction/SKILL.md)
+- [code-driven-motion-storytelling](skills/code-driven-motion-storytelling/SKILL.md)
+- [agent-skill-quality-engineer](skills/agent-skill-quality-engineer/SKILL.md)
+
+## Skill ecosystem monitoring
+
+18 curated upstreams are tracked in [upstreams.json](upstreams.json). [Monitor workflow](.github/workflows/monitor-upstreams.yml) runs weekly **after merger to default branch**, using read-only GitHub metadata and posting a review issue. It does **not** auto-install, copy or execute third-party skills. See [governance](docs/upstream-governance.md). Static structure validation runs on PRs via [CI](.github/workflows/validate-skills.yml). Real activation/effectiveness evaluations remain pending.
 
 ## Research provenance
 
