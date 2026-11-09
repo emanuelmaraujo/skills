@@ -1,4 +1,4 @@
-name: Monitor upstream skill repositories
+name: Radar leve de skills (sem IA)
 on:
   schedule:
     - cron: '37 10 * * 1'
@@ -7,47 +7,20 @@ permissions:
   contents: read
   issues: write
 concurrency:
-  group: monitor-upstream-skills
+  group: radar-leve-skills
   cancel-in-progress: false
 jobs:
   upstream:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 6
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-      - name: Scan curated repositories (read-only)
+      - name: Consultar metadados dos repositorios monitorados
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/monitor_upstreams.py --output upstream-report.json
-      - name: Publish inspection artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: skill-upstream-snapshot
-          path: upstream-report.json
-          retention-days: 30
-      - name: Create or update weekly review issue
+      - name: Comparar com ultima execucao e registrar apenas novidades
         env:
           GH_TOKEN: ${{ github.token }}
-        shell: bash
-        run: |
-          python3 - <<'PY'
-          import json,os,subprocess
-          x=json.load(open('upstream-report.json',encoding='utf-8'))
-          date=x['generated_at'][:10]
-          lines=['## Skill upstream review — '+date, '', 'Read-only snapshot. No code imported or executed.','']
-          for r in x['sources']:
-              lines.append('- '+r['repository']+': '+r['result']+' '+r.get('sha','')[:12]+' ['+r['classification']+']')
-          lines.extend(['','Investigate upstream changes, release notes, licensing, scripts and relevance before approving a separate PR.'])
-          body='\n'.join(lines)
-          title='Weekly skill ecosystem review'
-          found=subprocess.run(['gh','issue','list','--state','open','--search',title,'--json','number,title'],capture_output=True,text=True,check=True)
-          existing=next((r for r in json.loads(found.stdout) if r['title']==title),None)
-          if existing:
-              subprocess.run(['gh','issue','comment',str(existing['number']),'--body',body],check=True)
-          else:
-              subprocess.run(['gh','issue','create','--title',title,'--body',body,'--label','upstream-review'],check=False)
-              # Retry without label if not configured
-              again=subprocess.run(['gh','issue','list','--state','open','--search',title,'--json','title'],capture_output=True,text=True)
-              if title not in again.stdout:
-                  subprocess.run(['gh','issue','create','--title',title,'--body',body],check=True)
-          PY
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python3 scripts/summarize_upstream_changes.py --report upstream-report.json

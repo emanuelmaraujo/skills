@@ -1,0 +1,40 @@
+name: "Feedback de skill"
+description: "Relate um uso real para orientar melhorias pontuais, sem auditoria completa."
+title: "[skill] "
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: "Skill afetada"
+      description: "Nome da pasta em skills/, por exemplo frontend-visual-qa"
+      placeholder: "skills/frontend-visual-qa"
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: "O que aconteceu?"
+      description: "Resultado real, contexto resumido e limitação percebida. Remova tokens e dados sensíveis."
+      placeholder: "No projeto X, ao executar Y, o agente..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "O que seria melhor?"
+      placeholder: "Esperava que a skill..."
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: "Referências úteis (opcional)"
+      description: "Links para documentação, artigo técnico ou skill da comunidade."
+      placeholder: "https://github.com/..."
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: "Limites"
+      options:
+        - label: "Não incluir credenciais ou dados pessoais no relato."
+          required: true
