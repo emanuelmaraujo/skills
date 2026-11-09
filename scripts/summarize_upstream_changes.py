@@ -105,7 +105,7 @@ def main():
                     target += f"/compare/{old}...{new}"
                 else:
                     target += f"/commit/{new}"
-                lines.append(f"- [{name}]({target}): \`{(old or 'NEW')[:12]}\` → \`{new[:12]}\`")
+                lines.append(f"- [{name}]({target}): `{(old or 'NEW')[:12]}` → `{new[:12]}`")
             lines.extend(["", "Próximo passo: somente se houver necessidade real, "
                          "analisar o diff, licença e segurança; propor um PR pequeno "
                          "com base no feedback de uso."])
