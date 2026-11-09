@@ -35,4 +35,4 @@ Do not grant another agent authority to merge, deploy or run migrations; respect
 ## Reference material
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
-- [Shared acceptance checklist](../../docs/quality-gates.md) — delivery evidence, permissions and test status.
+- [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.

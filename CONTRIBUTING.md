@@ -11,3 +11,8 @@
 9. Do not call a skill tested until actual runner/device tests are performed and evidence is linked.
 
 No hidden instructions, promotion requirements, automatic tracking, vendor lock-in, unreviewed network execution, or production operations.
+
+Skill folders are standalone packages. Link shared delivery/evaluation guidance through
+`references/`, because native installers do not copy sibling repository directories.
+`docs/` remains the editing source; after changing those shared documents run
+`python3 scripts/sync_skill_references.py` and `python3 scripts/validate_skills.py`.
