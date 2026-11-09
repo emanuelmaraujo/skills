@@ -30,3 +30,7 @@ Own skill modules incorporate ideas from marketing operations, technical SEO, sc
 ## Notes about CI
 
 Workflow uses the GitHub Actions default token and requires **Issues: write** permission. Repository settings can restrict issue creation; if blocked, scan artifact remains available. Scheduled workflows run from default branch only once merged. The workflow does not pretend the external pack was evaluated.
+
+## Lightweight workflow
+
+The minimal GitHub-only process is specified in [workflow-skill-evolution.md](workflow-skill-evolution.md). It replaces noisy unconditional issue comments with commit comparisons; all adoption decisions require a separate scoped PR.
