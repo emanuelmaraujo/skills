@@ -1,6 +1,6 @@
 ---
 name: web-conversion-ux
-description: Use when optimizing ecommerce, affiliate, signup, checkout, onboarding, landing-page CTAs or product discovery for conversion and trust.
+description: "Use to diagnose low conversion and friction in signup, affiliate, ecommerce or checkout funnels; not to design statistical experiments or implement full pages."
 ---
 
 # web-conversion-ux
@@ -36,3 +36,8 @@ No fabricated scarcity, deceptive countdowns, hidden terms or unsupported conver
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: understand why a signup form loses users.
+- **Do not use for:** Not this task: determine A/B test sample size.
+- Load [worked scenario](references/worked-scenario.md) only when a concrete example is useful.

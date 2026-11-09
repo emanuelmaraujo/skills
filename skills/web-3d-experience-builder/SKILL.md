@@ -1,6 +1,6 @@
 ---
 name: web-3d-experience-builder
-description: Use when a website needs a 3D product viewer, interactive scene, WebGL hero, React Three Fiber, Three.js, Spline, or shaders.
+description: "Use when implementing interactive 3D product viewers or website scenes with WebGL and Three.js or R3F; not for offline 3D rendering only."
 ---
 
 # web-3d-experience-builder
@@ -36,3 +36,8 @@ Never make critical product information accessible only in canvas or use unlicen
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: build an optional 3D rotatable product viewer.
+- **Do not use for:** Not this task: render a static product image.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs a concrete example or output structure.

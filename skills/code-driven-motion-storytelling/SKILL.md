@@ -1,6 +1,6 @@
 ---
 name: code-driven-motion-storytelling
-description: Use when creating code-driven animations, HTML Canvas, SVG, GSAP, procedural video explainers or Three.js motion storyboards.
+description: "Use for storyboards and original code-driven explainers, timed SVG, Canvas or 3D audiovisual sequences; not for ordinary UI transitions."
 ---
 
 # code-driven-motion-storytelling
@@ -25,3 +25,8 @@ An interactive canvas demo is not an MP4. Never imply rendering without a real m
 - Keep changes scoped to an isolated branch. Do not merge, deploy, migrate, send PII or use paid services without authorization.
 - Distinguish OBSERVED, INFERRED, UNTESTED and VERIFIED. Provide PASS/FAIL/SKIP/BLOCKED with evidence; never fabricate tool runs or measurements.
 - See [quality gates](references/quality-gates.md) and [evaluation method](references/evaluation.md).
+
+## Activation boundary and worked pattern
+- **Use for:** Task: create a 20-second SVG explainer with timed scenes.
+- **Do not use for:** Not this task: animate navigation hover in a website.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs the domain-specific example.

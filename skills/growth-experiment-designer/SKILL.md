@@ -1,6 +1,6 @@
 ---
 name: growth-experiment-designer
-description: Use to design or evaluate A/B tests, split tests, product experiments, conversion hypotheses and statistically interpretable UI variants.
+description: "Use for A/B test design, randomization, sample planning, guardrails and statistical decision rules; not for a general usability review."
 ---
 
 # growth-experiment-designer
@@ -25,3 +25,8 @@ No fabricated lift or premature stopping based on a temporary significant result
 - Keep changes scoped to an isolated branch. Do not merge, deploy, migrate, send PII or use paid services without authorization.
 - Distinguish OBSERVED, INFERRED, UNTESTED and VERIFIED. Provide PASS/FAIL/SKIP/BLOCKED with evidence; never fabricate tool runs or measurements.
 - See [quality gates](references/quality-gates.md) and [evaluation method](references/evaluation.md).
+
+## Activation boundary and worked pattern
+- **Use for:** Task: determine whether CTA A beats CTA B with limited traffic.
+- **Do not use for:** Not this task: list visual problems in a landing page.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs the domain-specific example.

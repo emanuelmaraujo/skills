@@ -1,6 +1,6 @@
 ---
 name: web-accessibility-audit
-description: Use when assessing or fixing website accessibility, keyboard usability, focus management, screen reader semantics or reduced-motion issues.
+description: "Use when auditing WCAG, keyboard access, screen-reader semantics and focus behavior; not as generic visual polish."
 ---
 
 # web-accessibility-audit
@@ -36,3 +36,8 @@ Never claim WCAG compliance solely from static analyzers or perfect Lighthouse a
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: diagnose keyboard trap in a checkout modal.
+- **Do not use for:** Not this task: change card shadows and brand colors.
+- Load [worked scenario](references/worked-scenario.md) only when a concrete example is useful.

@@ -1,6 +1,6 @@
 ---
 name: design-system-architect
-description: Use when creating, documenting, auditing, or evolving design tokens, typography, spacing, components, themes, or a DESIGN.md for an existing web product.
+description: "Use when implementing or auditing reusable design tokens, typography, spacing and component variants; not when just selecting an artistic direction."
 ---
 
 # design-system-architect
@@ -36,3 +36,8 @@ A new design system requires an explicit product goal; never erase established b
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: standardize spacing and button variants across existing React screens.
+- **Do not use for:** Not this task: invent a new visual brand without implementation.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs a concrete example or output structure.

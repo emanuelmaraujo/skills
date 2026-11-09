@@ -1,6 +1,6 @@
 ---
 name: engineering-tdd-implementer
-description: Use for test-driven implementation, red-green-refactor, behavior-first feature development and incremental bug fixes.
+description: "Use for test-first implementation and bug fixes using observable interfaces and red-green iterations; not for reviewing an existing PR without coding."
 ---
 
 # engineering-tdd-implementer
@@ -25,3 +25,8 @@ Do not claim TDD when tests were written afterward or hide regressions by weaken
 - Keep changes scoped to an isolated branch. Do not merge, deploy, migrate, send PII or use paid services without authorization.
 - Distinguish OBSERVED, INFERRED, UNTESTED and VERIFIED. Provide PASS/FAIL/SKIP/BLOCKED with evidence; never fabricate tool runs or measurements.
 - See [quality gates](references/quality-gates.md) and [evaluation method](references/evaluation.md).
+
+## Activation boundary and worked pattern
+- **Use for:** Task: fix an API validation bug using behavior-first tests.
+- **Do not use for:** Not this task: review a finished PR for code smells.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs the domain-specific example.

@@ -1,6 +1,6 @@
 ---
 name: web-performance-engineer
-description: Use when investigating or optimizing slow websites, Core Web Vitals, large JavaScript bundles, imagery, fonts, hydration, or WebGL performance.
+description: "Use when optimizing web load and interaction performance including LCP, INP, CLS, JS hydration and bundle size; not for purely SEO indexing."
 ---
 
 # web-performance-engineer
@@ -35,3 +35,8 @@ Do not claim performance gains without comparable runs or optimize to synthetic 
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: reduce slow LCP on a product detail page.
+- **Do not use for:** Not this task: fix robots.txt and canonical headers.
+- Load [worked scenario](references/worked-scenario.md) only when a concrete example is useful.

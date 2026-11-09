@@ -1,6 +1,6 @@
 ---
 name: premium-dashboard-builder
-description: Use when building or improving data-heavy SaaS dashboards, administrative consoles, analytics views, tables, workflows or internal tools.
+description: "Use when implementing data-heavy administrative dashboards, tables, workflows and operational interfaces; not for marketing landing pages."
 ---
 
 # premium-dashboard-builder
@@ -36,3 +36,8 @@ A polished dashboard is not proof of implemented backend; never expose secrets o
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: implement a promotions moderation queue and filters.
+- **Do not use for:** Not this task: add a marketing hero section.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs a concrete example or output structure.

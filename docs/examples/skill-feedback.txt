@@ -1,0 +1,7 @@
+# Example feedback record (adapt to the selected skill)
+Task: "Review the checkout screen for accessibility problems."
+Chosen: web-accessibility-audit
+Not chosen: premium-landing-builder
+Evidence: actual repository/URL and keyboard reproduction path
+Status: STATIC ONLY until tested in the runner
+Improvement request: paste a real observed missed issue and expected behavior here.

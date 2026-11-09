@@ -1,6 +1,6 @@
 ---
 name: engineering-independent-review
-description: Use to review a code change, diff or PR independently against both its specification and the repository's standards.
+description: "Use to review a diff or pull request against its specification and coding standards independently; not as the primary implementer of a new feature."
 ---
 
 # engineering-independent-review
@@ -25,3 +25,8 @@ Do not approve based only on PR description, fabricate test runs or merge change
 - Keep changes scoped to an isolated branch. Do not merge, deploy, migrate, send PII or use paid services without authorization.
 - Distinguish OBSERVED, INFERRED, UNTESTED and VERIFIED. Provide PASS/FAIL/SKIP/BLOCKED with evidence; never fabricate tool runs or measurements.
 - See [quality gates](references/quality-gates.md) and [evaluation method](references/evaluation.md).
+
+## Activation boundary and worked pattern
+- **Use for:** Task: inspect a checkout PR against issue requirements and repository rules.
+- **Do not use for:** Not this task: implement a new checkout flow from scratch.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs the domain-specific example.
