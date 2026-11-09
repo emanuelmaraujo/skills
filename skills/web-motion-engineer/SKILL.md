@@ -1,6 +1,6 @@
 ---
 name: web-motion-engineer
-description: Use when implementing, diagnosing, or reviewing web animations, microinteractions, scroll storytelling, GSAP, Motion, SVG effects, or animation performance.
+description: "Use when implementing or debugging animations in an interactive web UI, GSAP timelines, Motion or scroll effects; not for producing exported video narratives."
 ---
 
 # web-motion-engineer
@@ -36,3 +36,8 @@ Do not install multiple overlapping motion engines or force smooth-scroll withou
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: improve a modal transition without breaking focus.
+- **Do not use for:** Not this task: export a 30-second explainer MP4.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs a concrete example or output structure.

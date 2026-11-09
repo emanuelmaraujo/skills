@@ -1,6 +1,6 @@
 ---
 name: web-security-review
-description: Use when reviewing the security impact of frontend changes, browser integrations, dependencies, auth flows, forms or external scripts.
+description: "Use for frontend security reviews of auth, browser integrations, untrusted data, dependencies or client-side secrets; not for generic styling changes."
 ---
 
 # web-security-review
@@ -35,3 +35,8 @@ Do not access secrets, change production auth/security controls or run active sc
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: review a new OAuth callback and redirect handling.
+- **Do not use for:** Not this task: improve landing page typography.
+- Load [worked scenario](references/worked-scenario.md) only when a concrete example is useful.

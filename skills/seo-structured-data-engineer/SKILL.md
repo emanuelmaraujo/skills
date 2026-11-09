@@ -1,6 +1,6 @@
 ---
 name: seo-structured-data-engineer
-description: Use to implement, validate or debug Schema.org, JSON-LD, Product/Offer, Organization, Article, BreadcrumbList and rich-result markup.
+description: "Use when writing or validating Schema.org JSON-LD, Product or Offer metadata, breadcrumbs and rich-result markup; not for generic keyword research."
 ---
 
 # seo-structured-data-engineer
@@ -25,3 +25,8 @@ A valid schema does not guarantee rich results. Never fabricate Product availabi
 - Keep changes scoped to an isolated branch. Do not merge, deploy, migrate, send PII or use paid services without authorization.
 - Distinguish OBSERVED, INFERRED, UNTESTED and VERIFIED. Provide PASS/FAIL/SKIP/BLOCKED with evidence; never fabricate tool runs or measurements.
 - See [quality gates](references/quality-gates.md) and [evaluation method](references/evaluation.md).
+
+## Activation boundary and worked pattern
+- **Use for:** Task: add valid Product and Offer structured data to a real product page.
+- **Do not use for:** Not this task: brainstorm blog topics.
+- Load [worked scenario](references/worked-scenario.md) only when a concrete example is useful.

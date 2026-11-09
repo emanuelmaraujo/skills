@@ -1,6 +1,6 @@
 ---
 name: product-art-direction
-description: Use when establishing distinctive visual identity for a website, redesigning generic AI UI or creating a brand-specific art direction.
+description: "Use when inventing or improving brand-specific visual direction and creative identity; hand token implementation to design-system-architect."
 ---
 
 # product-art-direction
@@ -25,3 +25,8 @@ Never copy a competitor identity or override a brand system without explicit jus
 - Keep changes scoped to an isolated branch. Do not merge, deploy, migrate, send PII or use paid services without authorization.
 - Distinguish OBSERVED, INFERRED, UNTESTED and VERIFIED. Provide PASS/FAIL/SKIP/BLOCKED with evidence; never fabricate tool runs or measurements.
 - See [quality gates](references/quality-gates.md) and [evaluation method](references/evaluation.md).
+
+## Activation boundary and worked pattern
+- **Use for:** Task: choose a visual language for a physical NFC product website.
+- **Do not use for:** Not this task: repair CSS variables that are already specified.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs a concrete example or output structure.

@@ -1,6 +1,6 @@
 ---
 name: seo-ai-search-visibility
-description: Use for AI search visibility, GEO/AEO, AI Overviews, ChatGPT/Perplexity citations, brand entity discoverability and AI-crawler considerations.
+description: "Use to audit AI answer-engine citations, GEO, AI Overviews and brand representation with dated examples; not for claiming guaranteed AI ranking."
 ---
 
 # seo-ai-search-visibility
@@ -25,3 +25,8 @@ No synthetic brand mentions, fake citations, unsupported ranking factors or llms
 - Keep changes scoped to an isolated branch. Do not merge, deploy, migrate, send PII or use paid services without authorization.
 - Distinguish OBSERVED, INFERRED, UNTESTED and VERIFIED. Provide PASS/FAIL/SKIP/BLOCKED with evidence; never fabricate tool runs or measurements.
 - See [quality gates](references/quality-gates.md) and [evaluation method](references/evaluation.md).
+
+## Activation boundary and worked pattern
+- **Use for:** Task: track whether an actual brand is cited on a fixed query set.
+- **Do not use for:** Not this task: tune a website animation.
+- Load [worked scenario](references/worked-scenario.md) only when a concrete example is useful.

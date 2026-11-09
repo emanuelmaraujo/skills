@@ -1,6 +1,6 @@
 ---
 name: seo-technical-auditor
-description: Use for technical SEO audits of crawling, indexing, sitemaps, robots.txt, redirects, canonical URLs, server rendering and SEO regressions.
+description: "Use for technical SEO discovery, indexing, crawl signals, canonical tags and sitemaps; not for tuning Web Vitals without indexing impact."
 ---
 
 # seo-technical-auditor
@@ -25,3 +25,8 @@ Never treat robots.txt as security, or claim immediate SEO gains or guaranteed i
 - Keep changes scoped to an isolated branch. Do not merge, deploy, migrate, send PII or use paid services without authorization.
 - Distinguish OBSERVED, INFERRED, UNTESTED and VERIFIED. Provide PASS/FAIL/SKIP/BLOCKED with evidence; never fabricate tool runs or measurements.
 - See [quality gates](references/quality-gates.md) and [evaluation method](references/evaluation.md).
+
+## Activation boundary and worked pattern
+- **Use for:** Task: diagnose a category URL excluded from search indexing.
+- **Do not use for:** Not this task: fix a React interaction delay.
+- Load [worked scenario](references/worked-scenario.md) only when a concrete example is useful.

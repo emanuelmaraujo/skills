@@ -1,6 +1,6 @@
 ---
 name: seo-content-strategy
-description: Use for keyword research, topical clusters, organic content briefs, editorial SEO strategy and internal linking planning.
+description: "Use for keyword and intent research, topic clusters, content briefs and editorial SEO plans; not for technical crawling bugs."
 ---
 
 # seo-content-strategy
@@ -25,3 +25,8 @@ Never fabricate first-hand experience, reviews, comparative claims or expert cre
 - Keep changes scoped to an isolated branch. Do not merge, deploy, migrate, send PII or use paid services without authorization.
 - Distinguish OBSERVED, INFERRED, UNTESTED and VERIFIED. Provide PASS/FAIL/SKIP/BLOCKED with evidence; never fabricate tool runs or measurements.
 - See [quality gates](references/quality-gates.md) and [evaluation method](references/evaluation.md).
+
+## Activation boundary and worked pattern
+- **Use for:** Task: build a content cluster around NFC business reviews.
+- **Do not use for:** Not this task: validate a sitemap XML file.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs the domain-specific example.

@@ -1,6 +1,6 @@
 ---
 name: agent-skill-quality-engineer
-description: Use when creating, importing, reviewing, benchmarking, revising or testing Agent Skills and SKILL.md trigger descriptions.
+description: "Use when designing, validating and refining Agent Skills or SKILL.md activation rules; not for general code review or web UI testing."
 ---
 
 # agent-skill-quality-engineer
@@ -26,3 +26,8 @@ Never auto-execute imported skills or claim they were tested merely because thei
 - Keep changes scoped to an isolated branch. Do not merge, deploy, migrate, send PII or use paid services without authorization.
 - Distinguish OBSERVED, INFERRED, UNTESTED and VERIFIED. Provide PASS/FAIL/SKIP/BLOCKED with evidence; never fabricate tool runs or measurements.
 - See [quality gates](references/quality-gates.md) and [evaluation method](references/evaluation.md).
+
+## Activation boundary and worked pattern
+- **Use for:** Task: revise one skill after a real failure in Claude Code.
+- **Do not use for:** Not this task: review ordinary React code quality.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs the domain-specific example.

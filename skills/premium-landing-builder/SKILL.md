@@ -1,6 +1,6 @@
 ---
 name: premium-landing-builder
-description: Use when implementing or refactoring high-conversion landing pages, marketing websites, SaaS product pages, pricing pages, or responsive hero sections.
+description: "Use when implementing a responsive marketing landing, hero or pricing page; use conversion UX separately when only diagnosing funnel friction."
 ---
 
 # premium-landing-builder
@@ -36,3 +36,8 @@ No fake social proof, unsupported guarantees, intrusive animation or third-party
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: build a SaaS pricing page with clear CTA.
+- **Do not use for:** Not this task: investigate why an existing page has low conversion.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs a concrete example or output structure.

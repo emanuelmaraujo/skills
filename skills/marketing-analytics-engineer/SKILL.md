@@ -1,6 +1,6 @@
 ---
 name: marketing-analytics-engineer
-description: Use to design, implement or audit product analytics, event tracking, UTMs, conversion instrumentation or funnel measurement.
+description: "Use when implementing or auditing web analytics, event taxonomies, attribution identifiers and funnel instrumentation; not for interpreting an A/B test alone."
 ---
 
 # marketing-analytics-engineer
@@ -25,3 +25,8 @@ Never enable third-party trackers or transmit sensitive data without authorizati
 - Keep changes scoped to an isolated branch. Do not merge, deploy, migrate, send PII or use paid services without authorization.
 - Distinguish OBSERVED, INFERRED, UNTESTED and VERIFIED. Provide PASS/FAIL/SKIP/BLOCKED with evidence; never fabricate tool runs or measurements.
 - See [quality gates](references/quality-gates.md) and [evaluation method](references/evaluation.md).
+
+## Activation boundary and worked pattern
+- **Use for:** Task: instrument offer-click and successful signup events.
+- **Do not use for:** Not this task: design a hypothesis about CTA text.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs the domain-specific example.

@@ -1,6 +1,6 @@
 ---
 name: frontend-visual-qa
-description: Use when reviewing visual changes, checking site fidelity, comparing reference screenshots, or performing responsive UI regression QA.
+description: "Use when comparing rendered web screens and investigating responsive or visual regressions; do not use as the primary reviewer of API-only PRs."
 ---
 
 # frontend-visual-qa
@@ -36,3 +36,8 @@ Never mark the UI 'pixel-perfect' without side-by-side evidence or present brows
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: compare checkout page before and after a CSS change.
+- **Do not use for:** Not this task: review database migrations or backend API logic.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs a concrete example or output structure.

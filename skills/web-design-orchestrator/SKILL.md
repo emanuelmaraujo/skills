@@ -1,6 +1,6 @@
 ---
 name: web-design-orchestrator
-description: Use when the user requests an end-to-end web experience spanning reference research, design, UI implementation, motion, performance, accessibility and QA.
+description: "Use for a multi-step web build requiring coordinated research, design, implementation and independent QA; not for narrow one-component fixes."
 ---
 
 # web-design-orchestrator
@@ -36,3 +36,8 @@ Do not grant another agent authority to merge, deploy or run migrations; respect
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: create a full responsive SaaS website with QA.
+- **Do not use for:** Not this task: fix one CSS margin.
+- Load [worked scenario](references/worked-scenario.md) only when a concrete example is useful.

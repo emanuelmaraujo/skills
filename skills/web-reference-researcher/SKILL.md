@@ -1,6 +1,6 @@
 ---
 name: web-reference-researcher
-description: Use when researching, auditing, comparing, or extracting web design inspiration from real websites, visual galleries, competitor pages, or templates.
+description: "Use when collecting and comparing real website design references; not for implementing a page or copying competitor assets."
 ---
 
 # web-reference-researcher
@@ -35,3 +35,8 @@ Do not guess technology from screenshots; do not replicate protected assets or e
 - [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
+
+## Activation boundary and worked pattern
+- **Use for:** Task: find inspiration for a new product landing page.
+- **Do not use for:** Not this task: implement the landing page directly.
+- Load [worked scenario](references/worked-scenario.md) only when the task needs a concrete example or output structure.
