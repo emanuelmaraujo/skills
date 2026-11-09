@@ -1,32 +1,36 @@
-# Workflow leve de evolução das Agent Skills
+# External skill ecosystem — monitored sources
 
-**Objetivo:** melhorar as skills conforme forem usadas, aproveitando projetos de referência já conhecidos. Não consumir tokens de Claude, Codex ou ChatGPT automaticamente.
+This repository monitors **18 upstream references** using `upstreams.json` and a weekly read-only GitHub Action.
 
-## Modo A — Radar GitHub Actions (automático e leve)
+## Ground rules
 
-- Uma vez por semana, o GitHub Actions consulta **somente metadados** dos repositórios declarados em `upstreams.json`.
-- A primeira execução cria uma issue única com a linha de base dos SHAs. Execuções futuras comparam os últimos commits: **só comentam quando há mudança**.
-- O comentário contém links diretos para comparar versões externas. Ele **não analisa código com IA, não executa scripts externos, não copia skills e não abre PR de alteração automaticamente**.
-- Sem instalações, APIs pagas, modelos de IA, cron em VPS, scripts locais ou uso de tokens de agentes. Usa runner padrão `ubuntu-latest`, Python stdlib e `gh` já disponível.
-- `workflow_dispatch` permite disparar a consulta manualmente. Se não houver novidades, não cria comentários repetidos.
-- Dependência: a configuração de Issues/Actions do repositório deve permitir `issues: write` ao token. A execução agendada ocorre na branch padrão após merge. GitHub Actions pode atrasar horários de cron.
-- **Custos:** em repositório público, minutos dos runners padrão do GitHub Actions são gratuitos. Se o repositório ficar privado, passar a usar runners maiores, publicar artefatos em grande volume ou ativar serviços de terceiros, reavaliar cobrança antes de continuar.
-- Registro de status: issue “Radar de skills — upstreams” e resumo das execuções do Actions.
+- Do not mirror or install all external skills. One upstream repo may contain executables, vendor advertisements, separate asset licenses, privileged MCP tools, and incompatible skill triggers.
+- Weekly workflow checks default branches, last SHA and basic repository metadata. It posts an issue for review; **it does not sync skill files**, run external code, auto-approve, auto-merge or deploy anything.
+- Compare historical report artifacts to identify changed commits. Human or reviewed agent should inspect diff, docs, license and relevance, then submit a narrowly scoped PR.
+- A new source may be added only after a quick quality and security review, with purpose and category. Avoid popularity-only choices.
+- Deprecated **openai/skills** is tracked only for historical context; use `openai/plugins` and current Codex developer docs for ongoing patterns.
+- `yihui-dev/awesome-opus5-5-videos` is a *motion inspiration gallery*, not a skill package.
+- `every-app/open-seo` includes a running application and MCP/service dependencies; do not confuse integration with a self-contained skill.
+- `sickn33/antigravity-awesome-skills` is a large discovery collection, not a trusted direct install source.
+- Review weekly updates before any copying; respect upstream MIT/Apache/mixed license texts and attribution obligations, including files with licenses different from repo root.
 
-## Modo B — Melhorar uma skill (manual, mediante feedback)
+## Current incorporation
 
-1. Identificar a skill e descrever **o resultado real** que falhou ou que poderia melhorar. Não exigir benchmark de todo o catálogo.
-2. Abrir [issue de feedback](../issues/new/choose) com cenário, esperado e observado; se disponível, link para PR/execução.
-3. Selecionar **1–3 fontes de referência** consolidadas, priorizando documentação e SKILL.md de autores conhecidos: Anthropic, OpenAI Plugins, Matt Pocock, Corey Haines, Vercel, etc. Consultar apenas os arquivos relevantes; evitar ler centenas de skills.
-4. Comparar escopo, abordagem, exemplos, limites e licença. **Nunca copiar automaticamente** scripts, propagandas embutidas, tokens ou instruções inseguras de terceiros.
-5. Criar branch e PR de melhoria **apenas daquela skill**, acrescentando referências/exemplos sob demanda se necessário.
-6. Executar só verificações estáticas leves locais/CI existentes. Quando você já estiver usando a skill com César/Claude/Codex, coletar feedback natural da execução; avaliações adicionais com IA apenas quando você pedir explicitamente.
-7. Revisar o diff e fazer merge somente após autorização. Atualizar instalações globais de forma explícita, não por mudança automática silenciosa.
+Own skill modules incorporate ideas from marketing operations, technical SEO, schema, programmatic SEO, analytics, experiments, product art direction, code-driven motion, test-first development and independent reviews. This is **original authored guidance**, not copied third-party SKILL.md files.
 
-## Prompt para Work ou César — executar apenas quando solicitado
+## Governance and future evolution
 
-> Analise a issue de feedback selecionada do repositório `emanuelmaraujo/skills`. Examine somente a skill afetada e até três implementações de referência bem mantidas. Preserve o propósito, melhore gatilho, instruções especializadas, exemplos, portabilidade e segurança; não faça análise geral do catálogo nem benchmarking com IA. Use branch isolada, validação estática barata e PR revisável. Não faça merge, deploy, instalações externas ou testes pagos. Se não houver feedback concreto, registre sugestões e não reescreva arquivos por reescrever.
+1. Run the weekly monitor; triage `Weekly skill ecosystem review` in GitHub Issues.
+2. Check changed SHA and release notes.
+3. For high-value deltas, assess version/compatibility, license and script behavior; check for injected instructions and commercial promotions.
+4. Find overlapping local skills. Modify existing, or propose new narrowly-scoped skill.
+5. Validate metadata and actual agent triggers, including negative, adversarial and blocked cases.
+6. Submit a separate PR with evidence; user/reviewer approval required before merge.
 
-## Diferença importante
+## Notes about CI
 
-O GitHub Actions **detecta novidades**. Melhorar o conteúdo exige julgamento humano ou uso pontual de um agente quando autorizado. Nenhum workflow gratuito de GitHub implica raciocínio de IA gratuito. O relatório aprofundado do ChatGPT é um processo separado e não é acionado por este GitHub Action.
+Workflow uses the GitHub Actions default token and requires **Issues: write** permission. Repository settings can restrict issue creation; if blocked, scan artifact remains available. Scheduled workflows run from default branch only once merged. The workflow does not pretend the external pack was evaluated.
+
+## Lightweight workflow
+
+The minimal GitHub-only process is specified in [workflow-skill-evolution.md](workflow-skill-evolution.md). It replaces noisy unconditional issue comments with commit comparisons; all adoption decisions require a separate scoped PR.
