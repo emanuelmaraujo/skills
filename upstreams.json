@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "policy": "observe-and-open-issues-only",
+  "curated_at": "2026-11-09",
+  "sources": [
+    {
+      "repository": "coreyhaines31/marketingskills",
+      "purpose": "Marketing, CRO, analytics and growth",
+      "classification": "reference",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "mattpocock/skills",
+      "purpose": "Engineering, specs, TDD and review",
+      "classification": "reference",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "AgriciDaniel/claude-seo",
+      "purpose": "Technical SEO, GEO and structured data",
+      "classification": "reference",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "every-app/open-seo",
+      "purpose": "SEO application with optional MCP and skills",
+      "classification": "integration",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "openai/skills",
+      "purpose": "Deprecated repo; use openai/plugins",
+      "classification": "deprecated",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "openai/plugins",
+      "purpose": "Current Codex plugin/skill pattern",
+      "classification": "reference",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "anthropics/skills",
+      "purpose": "Skill authoring, testing and frontend design",
+      "classification": "reference",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "elayadesign/ai-design-skills",
+      "purpose": "Landing page and Figma design methods",
+      "classification": "reference",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "yihui-dev/awesome-opus5-5-videos",
+      "purpose": "Code-driven motion gallery; not a skill pack",
+      "classification": "inspiration",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "purpose": "UI design intelligence; scripts and data need audit",
+      "classification": "reference",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "agentskills/agentskills",
+      "purpose": "Open specification",
+      "classification": "standard",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "obra/superpowers",
+      "purpose": "Software engineering agent workflows",
+      "classification": "candidate",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "vercel-labs/agent-skills",
+      "purpose": "Frontend and React practices",
+      "classification": "candidate",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "vercel-labs/skills",
+      "purpose": "Skill discovery and installation",
+      "classification": "candidate",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "expo/skills",
+      "purpose": "React Native/mobile references",
+      "classification": "candidate",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "remotion-dev/skills",
+      "purpose": "Programmatic video patterns",
+      "classification": "candidate",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "trailofbits/skills",
+      "purpose": "Security engineering practices",
+      "classification": "candidate",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    },
+    {
+      "repository": "sickn33/antigravity-awesome-skills",
+      "purpose": "Large community compilation, higher review risk",
+      "classification": "discovery",
+      "automatic_import": false,
+      "notes": "Review source content, licensing, executable files and quality before adoption"
+    }
+  ]
+}
