@@ -2,7 +2,7 @@
 
 A focused, **framework-aware** library of modular [Agent Skills](https://agentskills.io/specification) for premium web experiences, SaaS dashboards, 3D and 2D animation, and quality engineering.
 
-**24 skills**. Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
+**118 skills** (24 original and 94 Blender skills). Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
 
 ## Quick start
 
@@ -55,6 +55,12 @@ Read [quality gates](docs/quality-gates.md), [architecture](docs/architecture.md
 - [product-art-direction](skills/product-art-direction/SKILL.md)
 - [code-driven-motion-storytelling](skills/code-driven-motion-storytelling/SKILL.md)
 - [agent-skill-quality-engineer](skills/agent-skill-quality-engineer/SKILL.md)
+
+## Blender and 3D production
+
+The 94 Blender skills are imported from [arjun988/blender-skills](https://github.com/arjun988/blender-skills/tree/904f095d8f36a6e72adaebb08d07f884a074743d) under the [MIT license](docs/blender-skills-LICENSE), with their reference files. Start with [blender-director](skills/blender-director/SKILL.md) for routing. Follow the [upstream Blender MCP setup guide](https://github.com/arjun988/blender-skills/blob/904f095d8f36a6e72adaebb08d07f884a074743d/docs/BLENDER_MCP_SETUP.md) for live execution.
+
+For web 3D assets, use [asset optimization](skills/asset-optimization/SKILL.md) and [export pipeline](skills/export-pipeline/SKILL.md). The [upstream catalog](https://github.com/arjun988/blender-skills/blob/904f095d8f36a6e72adaebb08d07f884a074743d/SKILLS_GUIDE.md) lists specialists by production stage, art style, and genre.
 
 ## Skill ecosystem monitoring
 
