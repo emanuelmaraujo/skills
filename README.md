@@ -2,7 +2,7 @@
 
 A focused, **framework-aware** library of modular [Agent Skills](https://agentskills.io/specification) for premium web experiences, SaaS dashboards, 3D and 2D animation, backend development, and defensive security.
 
-**48 skills**. Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
+**56 skills**. Each standalone package defines when to use it, what to do and what it delivers. The catalog is structurally validated and live evaluations are tracked separately.
 
 ## Quick start
 
@@ -56,6 +56,19 @@ Read [quality gates](docs/quality-gates.md), [architecture](docs/architecture.md
 - [code-driven-motion-storytelling](skills/code-driven-motion-storytelling/SKILL.md)
 - [agent-skill-quality-engineer](skills/agent-skill-quality-engineer/SKILL.md)
 
+## Business and project creation
+
+- [business-opportunity-discovery](skills/business-opportunity-discovery/SKILL.md) — Investiga problemas, necessidades e oportunidades de negócio para decidir se uma ideia de produto, serviço ou melhoria interna merece um piloto.
+- [market-competitive-research](skills/market-competitive-research/SKILL.md) — Pesquisa mercado, alternativas e concorrência para definir segmentos, diferenciação e estimativas fundamentadas.
+- [business-model-design](skills/business-model-design/SKILL.md) — Desenha e revisa modelos de negócio e de operação, conectando proposta de valor, canais, receitas ou benefícios, custos e capacidade de execução.
+- [business-case-investment](skills/business-case-investment/SKILL.md) — Prepara ou revisa business cases para comparar alternativas de investimento, incluindo custos, benefícios, riscos e critérios de decisão.
+- [project-initiation](skills/project-initiation/SKILL.md) — Transforma uma ideia aprovada ou em avaliação em termo de abertura, com objetivo, escopo, resultados, papéis e critérios de sucesso.
+- [project-delivery-planning](skills/project-delivery-planning/SKILL.md) — Planeja e acompanha execução de projetos com entregas, dependências, capacidade, riscos, mudanças e acompanhamento de benefícios.
+- [launch-and-adoption-planning](skills/launch-and-adoption-planning/SKILL.md) — Planeja o lançamento e a adoção de produtos, serviços ou mudanças internas, com prontidão operacional, comunicação e medição.
+- [business-process-design](skills/business-process-design/SKILL.md) — Mapeia e melhora processos de negócio, com fluxo atual e futuro, responsáveis, controles, exceções e indicadores.
+
+Start with discovery, compare options through the business case, then define the charter and plan delivery. Choose the steps that match the decision and maturity of the project.
+
 ## Logo design and animation
 
 - [logo-design](skills/logo-design/SKILL.md) covers briefs, concepts, SVG masters and application tests. Adapted from [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) under MIT.
@@ -96,6 +109,12 @@ See the [catalog audit and routing decisions](docs/skills-audit-2026-11-24.md).
 - [ai-agent-hardening](skills/ai-agent-hardening/SKILL.md) — Revisa e reforça defensivamente os limites de confiança de agentes de IA, ferramentas MCP, conectores e pipelines RAG.
 
 Use [agent-skill-quality-engineer](skills/agent-skill-quality-engineer/SKILL.md) for skill authoring, packaging and activation review.
+
+## Choosing the next skill
+
+- **From idea to project.** Use `business-opportunity-discovery` for problem evidence, `business-case-investment` for an investment decision, `project-initiation` for scope and approval, and `project-delivery-planning` for execution.
+- **From a risk to verified controls.** Use `threat-modeling` for a system design, `information-security-risk-management` for treatment and acceptance, and `security-control-assurance` for operating evidence. Use `vulnerability-triage-remediation` for concrete alerts or findings.
+- **From an AI design to release evidence.** Use `ai-solution-design` for architecture, `ai-agent-hardening` for runtime controls, `ai-evaluation` for results and regressions, and `ai-governance` for ownership and approval. Use `agent-skill-quality-engineer` for skill instructions and activation.
 
 ## Skill ecosystem monitoring
 
