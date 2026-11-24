@@ -60,7 +60,7 @@ Read [quality gates](docs/quality-gates.md), [architecture](docs/architecture.md
 
 - [logo-design](skills/logo-design/SKILL.md) covers briefs, concepts, SVG masters and application tests. Adapted from [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) under MIT.
 - [logo-animation](skills/logo-animation/SKILL.md) covers logo reveals on the web and in video, informed by official GSAP and Remotion skills, with Adobe Express and Blender paths.
-- [premium-logo-animation](skills/premium-logo-animation/SKILL.md) covers cinematic logo stings with original 3D assembly, editorial montage, lighting, camera, sound and final mark validation.
+- [premium-logo-animation](skills/premium-logo-animation/SKILL.md) covers minimalist transparent logo motion with precise timing, optical alignment and alpha validation.
 
 ## Blender and 3D production
 
