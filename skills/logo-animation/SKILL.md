@@ -7,6 +7,8 @@ description: "Cria, implementa ou revisa animação de logo a partir de marca ap
 
 ## Fluxo
 
+Para assinaturas vetoriais, fundo transparente ou revisão de uma animação pronta, consulte [motion vetorial e revisão](references/vector-motion-and-review.md). Em revisão, use o master aprovado como referência e decodifique o alfa antes de aprovar o export. Ao exportar para sobreposição, use um formato com alfa compatível com o editor e confira em fundos claros e escuros.
+
 1. Confirme o vetor ou PNG oficial, o canal, a proporção, a duração, a área segura e se há assinatura sonora licenciada. Se houver apenas PNG, anime o ativo inteiro ou suas camadas fornecidas. Se o efeito exigir paths separados, peça o vetor ou trate a reconstrução como proposta. Preserve formas, espaçamento e cores no quadro final. Trabalhe numa cópia para separar camadas.
 2. Defina um gesto que nasça da marca: aparecimento por máscara, traço que percorre um contorno real, montagem das partes ou mudança controlada de luz. Proponha início, transformação e repouso, em quadros ou segundos. Para web, comece com 0,6–1,2 s quando o layout permitir. Para vinheta social, comece com 2–4 s e reserve leitura suficiente para a assinatura final. Ajuste ao pedido.
 3. Escolha o motor pelo formato e pela stack existente.

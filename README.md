@@ -2,7 +2,7 @@
 
 A focused, **framework-aware** library of modular [Agent Skills](https://agentskills.io/specification) for premium web experiences, SaaS dashboards, 3D and 2D animation, backend development, and defensive security.
 
-**36 skills**. Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
+**39 skills**. Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
 
 ## Quick start
 
@@ -60,8 +60,6 @@ Read [quality gates](docs/quality-gates.md), [architecture](docs/architecture.md
 
 - [logo-design](skills/logo-design/SKILL.md) covers briefs, concepts, SVG masters and application tests. Adapted from [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) under MIT.
 - [logo-animation](skills/logo-animation/SKILL.md) covers logo reveals on the web and in video, informed by official GSAP and Remotion skills, with Adobe Express and Blender paths.
-- [logo-motion-design](skills/logo-motion-design/SKILL.md) creates minimalist transparent brand motion from the approved vector.
-- [logo-motion-review](skills/logo-motion-review/SKILL.md) checks timing, optical alignment, fidelity and alpha.
 
 ## Backend, APIs and defensive security
 
@@ -73,6 +71,14 @@ Read [quality gates](docs/quality-gates.md), [architecture](docs/architecture.md
 - [devsecops-pipeline-hardening](skills/devsecops-pipeline-hardening/SKILL.md) — Revisa e melhora CI/CD quando a tarefa envolve scanners defensivos, permissões, segredos, SBOM, dependências ou proveniência de artefatos.
 - [pentest-governance-remediation](skills/pentest-governance-remediation/SKILL.md) — Prepara escopo de pentest autorizado e transforma relatórios já existentes em triagem, correções e validação defensiva.
 - [cybersecurity-baseline](skills/cybersecurity-baseline/SKILL.md) — Avalia controles mínimos de segurança organizacional quando a tarefa envolve inventário, identidade, backups, monitoramento ou resposta a incidentes.
+
+- [threat-modeling](skills/threat-modeling/SKILL.md) — Modela ameaças defensivamente para novos sistemas e alterações de arquitetura, fluxos de dados ou fronteiras de confiança.
+- [service-reliability-observability](skills/service-reliability-observability/SKILL.md) — Melhora a operação de APIs, workers e serviços quando a tarefa envolve SLOs, métricas, alertas, traces ou saúde de filas.
+- [security-incident-response](skills/security-incident-response/SKILL.md) — Organiza preparação e resposta defensiva a incidentes de segurança com triagem, preservação de evidência, contenção aprovada e recuperação.
+- [backup-recovery-assurance](skills/backup-recovery-assurance/SKILL.md) — Planeja e verifica backup, recuperação de serviço e continuidade quando a tarefa envolve RPO, RTO ou testes de restauração.
+- [identity-access-governance](skills/identity-access-governance/SKILL.md) — Revisa ou estrutura governança de identidades quando a tarefa envolve concessões, privilégios, revisão periódica, contas de serviço ou desligamento.
+
+See the [catalog audit and routing decisions](docs/skills-audit-2026-11-24.md).
 
 ## Skill ecosystem monitoring
 
