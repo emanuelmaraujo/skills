@@ -2,7 +2,7 @@
 
 A focused, **framework-aware** library of modular [Agent Skills](https://agentskills.io/specification) for premium web experiences, SaaS dashboards, 3D and 2D animation, and quality engineering.
 
-**121 skills** (27 curated and 94 Blender skills). Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
+**122 skills** (28 curated and 94 Blender skills). Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
 
 ## Quick start
 
@@ -60,7 +60,8 @@ Read [quality gates](docs/quality-gates.md), [architecture](docs/architecture.md
 
 - [logo-design](skills/logo-design/SKILL.md) covers briefs, concepts, SVG masters and application tests. Adapted from [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) under MIT.
 - [logo-animation](skills/logo-animation/SKILL.md) covers logo reveals on the web and in video, informed by official GSAP and Remotion skills, with Adobe Express and Blender paths.
-- [premium-logo-animation](skills/premium-logo-animation/SKILL.md) covers minimalist transparent logo motion with precise timing, optical alignment and alpha validation.
+- [logo-motion-design](skills/logo-motion-design/SKILL.md) creates minimalist transparent brand motion from the approved vector.
+- [logo-motion-review](skills/logo-motion-review/SKILL.md) checks timing, optical alignment, fidelity and alpha.
 
 ## Blender and 3D production
 
