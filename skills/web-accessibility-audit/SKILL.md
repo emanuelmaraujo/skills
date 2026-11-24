@@ -5,6 +5,10 @@ description: "Use when auditing WCAG, keyboard access, screen-reader semantics a
 
 # web-accessibility-audit
 
+## Project context
+
+Identify target users, input methods, critical journeys and applicable conformance needs. Use available tools and complement automation with manual checks.
+
 ## Goal
 Audit user journeys against current WCAG guidance and implement verified accessible alternatives.
 
@@ -33,7 +37,6 @@ Never claim WCAG compliance solely from static analyzers or perfect Lighthouse a
 - Prefer the smallest maintainable implementation. Avoid copied brand assets, deceptive claims, hidden tracking and dependencies added only for spectacle.
 
 ## Reference material
-- [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
 

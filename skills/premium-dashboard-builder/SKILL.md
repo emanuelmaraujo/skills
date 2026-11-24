@@ -5,6 +5,10 @@ description: "Use when implementing data-heavy administrative dashboards, tables
 
 # premium-dashboard-builder
 
+## Project context
+
+Identify operator roles, frequency of use and critical decisions. Select the interface patterns that fit the available data and required actions.
+
 ## Goal
 Optimize information hierarchy, operational speed, trust and safe actions; aesthetics support task completion.
 
@@ -33,7 +37,6 @@ A polished dashboard is not proof of implemented backend; never expose secrets o
 - Prefer the smallest maintainable implementation. Avoid copied brand assets, deceptive claims, hidden tracking and dependencies added only for spectacle.
 
 ## Reference material
-- [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
 

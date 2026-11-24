@@ -5,6 +5,10 @@ description: "Use for storyboards and original code-driven explainers, timed SVG
 
 # code-driven-motion-storytelling
 
+## Project context
+
+Identify the audience, motion medium and delivery surface. Choose the authoring and rendering approach based on available tools and required output.
+
 ## Purpose
 Turn a visual narrative into deterministic code while keeping web preview separate from video export.
 

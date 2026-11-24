@@ -5,6 +5,10 @@ description: "Use when comparing rendered web screens and investigating responsi
 
 # frontend-visual-qa
 
+## Project context
+
+Identify the intended visual baseline, supported devices and critical states. Pick screenshot or manual comparisons according to the tools and artifacts available.
+
 ## Goal
 Provide reproducible visual findings and an honest evidence trail rather than a subjective thumbs-up.
 
@@ -33,7 +37,6 @@ Never mark the UI 'pixel-perfect' without side-by-side evidence or present brows
 - Prefer the smallest maintainable implementation. Avoid copied brand assets, deceptive claims, hidden tracking and dependencies added only for spectacle.
 
 ## Reference material
-- [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
 

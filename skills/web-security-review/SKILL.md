@@ -5,6 +5,10 @@ description: "Use for frontend security reviews of auth, browser integrations, u
 
 # web-security-review
 
+## Project context
+
+Identify browser capabilities, origins, externally supplied data and privilege boundaries. Adapt defensive verification to the architecture and authorized scope.
+
 ## Goal
 Review concrete web threat surfaces and reduce exploitable changes before they ship.
 
@@ -32,7 +36,6 @@ Do not access secrets, change production auth/security controls or run active sc
 - Prefer the smallest maintainable implementation. Avoid copied brand assets, deceptive claims, hidden tracking and dependencies added only for spectacle.
 
 ## Reference material
-- [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
 

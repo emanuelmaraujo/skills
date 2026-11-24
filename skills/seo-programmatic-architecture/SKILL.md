@@ -5,14 +5,18 @@ description: "Use when designing scalable data-driven SEO templates, directories
 
 # seo-programmatic-architecture
 
+## Project context
+
+Identify the entity type, dataset constraints and what makes each page useful. Select the rendering approach that meets indexability, accessibility and performance needs.
+
 ## Purpose
 Ship useful unique pages with sound data provenance and index strategy, not mass-produced doorway content.
 
 ## Workflow
 1. Validate dataset rights, unique entity IDs, freshness, search intent and value that differs meaningfully by page.
 2. Design URL taxonomy, index/noindex, canonical deduplication, sitemaps and internal links.
-3. Implement small accessible server-rendered pilot with real data, clear provenance and stable pagination.
-4. Define safeguards against thin pages, missing offers, changing affiliate prices, stale URLs and faceted index explosion; measure pilot outcomes before scaling.
+3. Implement small accessible pilot using a rendering approach that meets indexing needs with real data, clear provenance and stable pagination.
+4. Define safeguards against thin pages, missing fields, changing source data, stale URLs and faceted index explosion; measure pilot outcomes before scaling.
 
 ## Deliverables
 Data/URL contracts, template sketch, indexing rules, pilot evidence, freshness plan, data-quality thresholds and rollback.

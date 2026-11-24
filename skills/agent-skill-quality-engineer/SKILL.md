@@ -5,6 +5,10 @@ description: "Use when designing, validating and refining Agent Skills or SKILL.
 
 # agent-skill-quality-engineer
 
+## Project context
+
+Identify the intended agent, installation scope and tasks that should activate the skill. Keep the instructions usable across compatible agents; document runner-specific configuration only if needed.
+
 ## Purpose
 Make skill workflows discoverable, secure, minimal and validated by realistic agent execution.
 
@@ -29,5 +33,5 @@ Never auto-execute imported skills or claim they were tested merely because thei
 
 ## Activation boundary and worked pattern
 - **Use for:** Task: revise one skill after a real failure in Claude Code.
-- **Do not use for:** Not this task: review ordinary React code quality.
+- **Do not use for:** Not this task: review ordinary application code quality.
 - Load [worked scenario](references/worked-scenario.md) only when the task needs the domain-specific example.

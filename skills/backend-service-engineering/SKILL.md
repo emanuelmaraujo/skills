@@ -1,16 +1,20 @@
 ---
 name: backend-service-engineering
-description: "Implementa e evolui serviços backend, workers e fluxos de dados quando a tarefa envolve consistência, transações, filas, migrações ou observabilidade."
+description: "Implementa e evolui serviços backend, workers e fluxos de dados quando a tarefa envolve consistência, transações, filas, migrações ou desempenho de banco de dados."
 ---
 
 # backend-service-engineering
+
+## Contexto de aplicação
+
+Identifique linguagem, runtime, armazenamento, modelo de execução e invariantes. Escolha padrões conforme os riscos e mecanismos já disponíveis no projeto.
 
 ## Procedimento
 
 1. Mapeie os pontos de entrada, invariantes e operações que podem repetir. Preserve contratos atuais e prefira a stack do projeto.
 2. Escolha limites transacionais explícitos e restrições no banco. Para efeitos externos, use idempotência e o mecanismo de entrega confiável já adotado. Modele disputa, falha parcial e repetição.
-3. Se houver migração, cubra dados antigos, coexistência de versões, backfill incremental e rollback operacional.
-4. Teste pelos pontos de entrada normais usando casos de duplicidade, falha e concorrência. Registre métricas e logs sem segredos.
+3. Se houver migração, cubra dados antigos, coexistência de versões, backfill incremental e rollback operacional. Para consultas lentas, obtenha plano com dados representativos e inspecione estimativas, índices e volume lido. Compare antes e depois sem executar análises intrusivas em produção.
+4. Teste pelos pontos de entrada normais usando casos de duplicidade, falha e concorrência. Registre métricas e logs sem segredos. Para SLO, alertas ou saúde de fila em produção, encaminhe para service-reliability-observability.
 
 ## Limites
 

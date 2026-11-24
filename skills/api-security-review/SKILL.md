@@ -5,6 +5,10 @@ description: "Revisa defensivamente código e configuração de APIs quando a ta
 
 # api-security-review
 
+## Contexto de aplicação
+
+Identifique protocolo, identidades, fronteiras de confiança e fonte de autorização. Ajuste a revisão aos controles e à exposição reais da API.
+
 ## Procedimento
 
 1. Mapeie rotas, identidades, papéis, tenants e campos expostos. Trace no código onde a autenticação e a autorização são aplicadas em cada operação.

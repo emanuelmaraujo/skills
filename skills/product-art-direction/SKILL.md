@@ -5,6 +5,10 @@ description: "Use when inventing or improving brand-specific visual direction an
 
 # product-art-direction
 
+## Project context
+
+Identify audience, materials or subject matter, channels and existing visual assets. Derive creative choices from the project's characteristics.
+
 ## Purpose
 Derive cohesive visual choices from actual product subject matter and user context.
 

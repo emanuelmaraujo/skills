@@ -5,6 +5,10 @@ description: "Use when writing or validating Schema.org JSON-LD, Product or Offe
 
 # seo-structured-data-engineer
 
+## Project context
+
+Identify the content entities and eligible markup for the target surface. Map published facts to the schema and validate against visible content.
+
 ## Purpose
 Produce machine-readable claims that exactly reflect visible, trusted site content.
 

@@ -5,6 +5,10 @@ description: "Use to audit AI answer-engine citations, GEO, AI Overviews and bra
 
 # seo-ai-search-visibility
 
+## Project context
+
+Identify markets, languages, audience questions and answer surfaces that matter for the project. Measure dated observations within those boundaries.
+
 ## Purpose
 Improve credible discoverability while separating real search guidance from speculative GEO tactics.
 

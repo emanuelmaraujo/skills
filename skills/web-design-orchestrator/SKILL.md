@@ -5,6 +5,10 @@ description: "Use for a multi-step web build requiring coordinated research, des
 
 # web-design-orchestrator
 
+## Project context
+
+Identify the project goal, scope and available evidence. Route only the disciplines needed for this project and reuse existing project conventions.
+
 ## Goal
 Coordinate specialized web skills without delegating away project constraints or claiming unavailable capabilities.
 
@@ -33,7 +37,6 @@ Do not grant another agent authority to merge, deploy or run migrations; respect
 - Prefer the smallest maintainable implementation. Avoid copied brand assets, deceptive claims, hidden tracking and dependencies added only for spectacle.
 
 ## Reference material
-- [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
 

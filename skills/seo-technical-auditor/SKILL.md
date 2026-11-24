@@ -5,6 +5,10 @@ description: "Use for technical SEO discovery, indexing, crawl signals, canonica
 
 # seo-technical-auditor
 
+## Project context
+
+Identify target search surfaces, rendering behavior, URL inventory and indexing intent. Restrict conclusions to the evidence available for this site.
+
 ## Purpose
 Diagnose verifiable blockers to search discoverability, without guaranteeing search rankings.
 
@@ -28,5 +32,5 @@ Never treat robots.txt as security, or claim immediate SEO gains or guaranteed i
 
 ## Activation boundary and worked pattern
 - **Use for:** Task: diagnose a category URL excluded from search indexing.
-- **Do not use for:** Not this task: fix a React interaction delay.
+- **Do not use for:** Not this task: fix a frontend interaction delay.
 - Load [worked scenario](references/worked-scenario.md) only when a concrete example is useful.
