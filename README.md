@@ -2,7 +2,7 @@
 
 A focused, **framework-aware** library of modular [Agent Skills](https://agentskills.io/specification) for premium web experiences, SaaS dashboards, 3D and 2D animation, backend development, and defensive security.
 
-**47 skills**. Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
+**56 skills**. Each standalone package defines when to use it, what to do and what it delivers. The catalog is structurally validated and live evaluations are tracked separately.
 
 ## Quick start
 
@@ -92,6 +92,29 @@ Start with discovery, compare options through the business case, then define the
 - [identity-access-governance](skills/identity-access-governance/SKILL.md) — Revisa ou estrutura governança de identidades quando a tarefa envolve concessões, privilégios, revisão periódica, contas de serviço ou desligamento.
 
 See the [catalog audit and routing decisions](docs/skills-audit-2026-11-24.md).
+
+## Information security
+
+- [information-security-risk-management](skills/information-security-risk-management/SKILL.md) — Analisa e trata riscos de segurança da informação, com registro, plano de ação, aceite e risco residual.
+- [security-control-assurance](skills/security-control-assurance/SKILL.md) — Planeja e verifica efetividade de controles de segurança, organiza evidências de auditoria e acompanha planos de correção.
+- [system-hardening](skills/system-hardening/SKILL.md) — Planeja e valida hardening defensivo de sistemas operacionais, servidores, contêineres e serviços gerenciados.
+- [third-party-security-assessment](skills/third-party-security-assessment/SKILL.md) — Avalia segurança e resiliência de fornecedores, SaaS e integrações antes da contratação e em revisões periódicas.
+- [data-protection-engineering](skills/data-protection-engineering/SKILL.md) — Implementa ou revisa proteção de dados em produtos, integrações, pipelines e aplicações de IA.
+
+## AI projects
+
+- [ai-solution-design](skills/ai-solution-design/SKILL.md) — Planeja e implementa soluções de IA com modelos, ferramentas, RAG ou workflows conforme o caso e os critérios de qualidade do projeto.
+- [ai-governance](skills/ai-governance/SKILL.md) — Estrutura governança de IA para inventário, aprovação, supervisão, gestão de riscos e revisão contínua de casos de uso.
+- [ai-evaluation](skills/ai-evaluation/SKILL.md) — Projeta e executa avaliações de aplicações de IA, RAG e agentes para comparar qualidade, custo, latência, segurança e regressões.
+- [ai-agent-hardening](skills/ai-agent-hardening/SKILL.md) — Revisa e reforça defensivamente os limites de confiança de agentes de IA, ferramentas MCP, conectores e pipelines RAG.
+
+Use [agent-skill-quality-engineer](skills/agent-skill-quality-engineer/SKILL.md) for skill authoring, packaging and activation review.
+
+## Choosing the next skill
+
+- **From idea to project.** Use `business-opportunity-discovery` for problem evidence, `business-case-investment` for an investment decision, `project-initiation` for scope and approval, and `project-delivery-planning` for execution.
+- **From a risk to verified controls.** Use `threat-modeling` for a system design, `information-security-risk-management` for treatment and acceptance, and `security-control-assurance` for operating evidence. Use `vulnerability-triage-remediation` for concrete alerts or findings.
+- **From an AI design to release evidence.** Use `ai-solution-design` for architecture, `ai-agent-hardening` for runtime controls, `ai-evaluation` for results and regressions, and `ai-governance` for ownership and approval. Use `agent-skill-quality-engineer` for skill instructions and activation.
 
 ## Skill ecosystem monitoring
 
