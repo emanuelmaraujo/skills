@@ -5,6 +5,10 @@ description: "Use for test-first implementation and bug fixes using observable i
 
 # engineering-tdd-implementer
 
+## Project context
+
+Find the smallest observable seam and use the repository's test runner and fixtures. Choose evidence that reflects normal use of the changed behavior.
+
 ## Purpose
 Deliver narrow vertical slices whose tests verify behavior through stable public interfaces.
 

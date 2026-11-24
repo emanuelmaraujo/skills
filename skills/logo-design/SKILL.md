@@ -6,6 +6,10 @@ license: MIT
 
 # Criação de logos
 
+## Contexto de aplicação
+
+Identifique público, aplicações, escala, contraste e ativos da marca. Use as restrições de produção para decidir quais variantes precisam existir.
+
 ## Fluxo
 
 1. Defina nome escrito, oferta, público, três atributos, concorrentes, aplicações críticas e restrições. Para marca existente, solicite ou localize o vetor aprovado e o manual no projeto ou kit da marca. Use o Adobe Express quando o kit correto estiver de fato disponível. Confirme a proveniência da paleta, tipografia e símbolo. Se o kit estiver indisponível, explicite a lacuna e trate qualquer nova proposta como rascunho.
@@ -15,14 +19,14 @@ license: MIT
 5. Mostre os conceitos lado a lado e recomende um com base nas aplicações. Quando a tarefa for exploração, aguarde a escolha antes de finalizar. Quando o pedido já autorizar uma entrega completa, avance com a direção escolhida ou com a hipótese declarada.
 6. Produza as variantes solicitadas com área de proteção, tamanho mínimo verificado e cores do projeto. Preserve um master editável e faça a versão de distribuição independente de fontes externas. SVGs finais devem ter viewBox válido, transparência quando aplicável e geometria sem scripts ou recursos remotos. Confirme licença de fontes e registre similaridades que mereçam revisão, sem prometer disponibilidade de registro.
 
-## Aplicação aos projetos
+## Aplicações típicas
 
 | Projeto | Provas prioritárias |
 | --- | --- |
-| Emanuel Araújo | Logo aprovado do kit da marca, navegação do portfólio em mobile, favicon e contraste sobre a paleta oficial. A estética do portfólio pode orientar a apresentação sem alterar o símbolo. |
-| Prumo | Avatar recortado em círculo, identificação entre grupos e leitura sobre fundos claros e escuros. Preserve a lógica das variantes aprovadas do Prumo e de suas frentes. |
-| Torvya | Assinaturas de linha e monograma em área pequena, placa física e versão monocromática. Use especificações do fornecedor para impressão ou gravação. |
-| Marcos Krep | Leitura no cardápio, avatar circular, selo e assinatura sobre fundos da marca. Faça prova no tamanho físico quando houver impressão. |
+| Identidade profissional | Logo aprovado do kit da marca, navegação do portfólio em mobile, favicon e contraste sobre a paleta oficial. A estética do portfólio pode orientar a apresentação sem alterar o símbolo. |
+| Marca com comunidades ou subprodutos | Avatar recortado em círculo, identificação entre grupos e leitura sobre fundos claros e escuros. Preserve a lógica das variantes aprovadas da marca e de suas frentes. |
+| Marca de produto físico | Assinaturas de linha e monograma em área pequena, placa física e versão monocromática. Use especificações do fornecedor para impressão ou gravação. |
+| Alimentação e varejo | Leitura no cardápio, avatar circular, selo e assinatura sobre fundos da marca. Faça prova no tamanho físico quando houver impressão. |
 
 ## Deliverables
 

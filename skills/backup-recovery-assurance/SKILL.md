@@ -5,6 +5,10 @@ description: "Planeja e verifica backup, recuperação de serviço e continuidad
 
 # backup-recovery-assurance
 
+## Contexto de aplicação
+
+Identifique o que precisa voltar a funcionar, onde estão os dados e quais dependências também precisam ser recuperadas. Use métodos de restauração compatíveis com o ambiente.
+
 ## Procedimento
 
 1. Mapeie serviços críticos, dependências e proprietários. Acorde RPO para perda aceitável de dados e RTO para retomada. Confira cobertura, retenção, proteção de cópias e acesso de recuperação.

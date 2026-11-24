@@ -5,6 +5,10 @@ description: "Use when collecting and comparing real website design references; 
 
 # web-reference-researcher
 
+## Project context
+
+Identify the question, selection criteria and relevant context before choosing examples. Use independently accessible sources appropriate to the project.
+
 ## Goal
 Research references and convert them into implementable design observations without copying third-party identity.
 
@@ -13,7 +17,7 @@ Only for the trigger in frontmatter. For a multi-discipline request, use `web-de
 
 ## Procedure
 1. Clarify product, audience, page type, outcome, brand constraints and motion budget.
-2. Collect 3–6 relevant URLs; prioritize primary pages and original documentation. Record URL and access date. Reference the [Atlas](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) as a discovery index, not a source of truth.
+2. Collect 3–6 relevant URLs; prioritize primary pages and original documentation. Record URL and access date. Treat curated collections as discovery aids and verify patterns against the original sources.
 3. Inspect page structure: navigation, hierarchy, typography, color, grid, sections, CTA, responsiveness, states and motion. Differentiate visual hypothesis from confirmed implementation.
 4. Assign each reference one role: **structure**, **visual direction**, **interaction** (maximum three primary inspirations). Note distinctiveness and copyright risk.
 5. Rank candidates by product fit, mobile UX, feasibility, accessibility, cost and maintainability. Document unknown licenses rather than assuming reuse rights.
@@ -32,7 +36,6 @@ Do not guess technology from screenshots; do not replicate protected assets or e
 - Prefer the smallest maintainable implementation. Avoid copied brand assets, deceptive claims, hidden tracking and dependencies added only for spectacle.
 
 ## Reference material
-- [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
 

@@ -1,9 +1,13 @@
 ---
 name: web-conversion-ux
-description: "Use to diagnose low conversion and friction in signup, affiliate, ecommerce or checkout funnels; not to design statistical experiments or implement full pages."
+description: "Use to diagnose low conversion and friction in public or internal web journeys; not to design statistical experiments or implement full pages."
 ---
 
 # web-conversion-ux
+
+## Project context
+
+Identify the desired task outcome and its audience. Include transactional, educational or internal journeys where there is a measurable completion goal.
 
 ## Goal
 Use ethical behavioral design and observable user tasks rather than visual trends alone.
@@ -13,7 +17,7 @@ Only for the trigger in frontmatter. For a multi-discipline request, use `web-de
 
 ## Procedure
 1. Identify the funnel, audience, user intent and baseline measurement; distinguish business claims from measured facts.
-2. Map friction: offer clarity, price, terms, imagery, trust, form length, navigation, loading and mobile touch targets.
+2. Map friction in information, instructions, forms, navigation, feedback and touch targets. Include price or terms where applicable.
 3. Generate testable hypotheses with primary and guardrail metrics, segment assumptions and implementation cost.
 4. Recommend accessible, transparent copy, pricing and CTAs, suitable defaults and error recovery; avoid dark patterns.
 5. Prioritize experiments; plan analytics events without PII or unintended tracking; require consent/privacy controls where needed.
@@ -33,7 +37,6 @@ No fabricated scarcity, deceptive countdowns, hidden terms or unsupported conver
 - Prefer the smallest maintainable implementation. Avoid copied brand assets, deceptive claims, hidden tracking and dependencies added only for spectacle.
 
 ## Reference material
-- [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
 

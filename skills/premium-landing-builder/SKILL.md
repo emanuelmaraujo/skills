@@ -5,6 +5,10 @@ description: "Use when implementing a responsive marketing landing, hero or pric
 
 # premium-landing-builder
 
+## Project context
+
+Identify the intended audience, offer or purpose, call to action and publishing constraints. Adapt the page structure to the visitor's decision.
+
 ## Goal
 Ship compelling marketing pages with conversion clarity, accessible semantics and restrained motion.
 
@@ -33,7 +37,6 @@ No fake social proof, unsupported guarantees, intrusive animation or third-party
 - Prefer the smallest maintainable implementation. Avoid copied brand assets, deceptive claims, hidden tracking and dependencies added only for spectacle.
 
 ## Reference material
-- [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
 

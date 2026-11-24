@@ -1,9 +1,13 @@
 ---
 name: web-3d-experience-builder
-description: "Use when implementing interactive 3D product viewers or website scenes with WebGL and Three.js or R3F; not for offline 3D rendering only."
+description: "Use when implementing interactive 3D product viewers or website scenes in a browser; not for offline 3D rendering only."
 ---
 
 # web-3d-experience-builder
+
+## Project context
+
+Identify device needs, assets, interaction goals and performance limits. Choose the rendering approach based on the stack and fallback requirements.
 
 ## Goal
 Deliver optional and performant 3D that demonstrates real products without obstructing content or conversion.
@@ -13,7 +17,7 @@ Only for the trigger in frontmatter. For a multi-discipline request, use `web-de
 
 ## Procedure
 1. Confirm that 3D solves a user need; inspect assets and permissions, target platforms, SSR constraints and existing stack.
-2. Choose between embedded scene editor, Three.js, React Three Fiber/Drei or a static rendering using maintenance and performance trade-offs.
+2. Choose between the existing renderer, a self-contained interactive viewer or a static rendering using maintenance and performance trade-offs.
 3. Separate 3D canvas from accessible HTML navigation, controls, labels and product copy; implement loading poster and graceful fallback.
 4. Compress models/textures, lazy-load offscreen scenes, limit draw calls/pixel ratio and account for context loss.
 5. Provide a non-WebGL or reduced-motion fallback; controls must support touch and keyboard alternatives when essential.
@@ -33,7 +37,6 @@ Never make critical product information accessible only in canvas or use unlicen
 - Prefer the smallest maintainable implementation. Avoid copied brand assets, deceptive claims, hidden tracking and dependencies added only for spectacle.
 
 ## Reference material
-- [Web Design Atlas (Notion)](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330) — reference catalog and methodology, not automatically validated code.
 - [Agent Skills specification](https://agentskills.io/specification) — frontmatter and folder convention.
 - [Shared acceptance checklist](references/quality-gates.md) — delivery evidence, permissions and test status.
 

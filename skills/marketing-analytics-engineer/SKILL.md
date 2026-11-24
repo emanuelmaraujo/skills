@@ -5,6 +5,10 @@ description: "Use when implementing or auditing web analytics, event taxonomies,
 
 # marketing-analytics-engineer
 
+## Project context
+
+Identify the decision, instrumented product surfaces and sources of truth. Define events in terms of behavior and map them to the analytics stack already used.
+
 ## Purpose
 Capture decision-useful, privacy-aware analytics with consistent and reconciled metrics.
 

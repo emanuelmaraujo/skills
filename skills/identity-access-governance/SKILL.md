@@ -5,6 +5,10 @@ description: "Revisa ou estrutura governança de identidades quando a tarefa env
 
 # identity-access-governance
 
+## Contexto de aplicação
+
+Identifique onde identidades, papéis e concessões são mantidos, inclusive se houver múltiplos provedores. Use os mecanismos do ambiente e preserve a rastreabilidade do ciclo de vida.
+
 ## Procedimento
 
 1. Inventarie identidades humanas, contas de serviço e contas de contingência. Registre recurso, papel, proprietário, motivo e validade sem exportar segredos. Separe identidades privilegiadas e de uso diário.
@@ -25,7 +29,7 @@ Matriz de acesso, fluxo de ciclo de vida, evidência amostral e fila de remedia�
 
 ## Avaliação
 
-- **Positivo A.** Revisar administradores M365: justificar papéis e controles de contingência.
+- **Positivo A.** Revisar contas administrativas de uma plataforma: justificar papéis e controles de contingência.
 - **Positivo B.** Modelar desligamento: validar retirada de grupos, sessões e acessos.
 - **Negativo.** Revisar autorização de um endpoint: encaminhar para api-security-review.
 - **Recurso indisponível.** Sem export do diretório: entregar modelo e marcar cobertura pendente.

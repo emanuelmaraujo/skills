@@ -5,6 +5,10 @@ description: "Implementa e evolui serviços backend, workers e fluxos de dados q
 
 # backend-service-engineering
 
+## Contexto de aplicação
+
+Identifique linguagem, runtime, armazenamento, modelo de execução e invariantes. Escolha padrões conforme os riscos e mecanismos já disponíveis no projeto.
+
 ## Procedimento
 
 1. Mapeie os pontos de entrada, invariantes e operações que podem repetir. Preserve contratos atuais e prefira a stack do projeto.

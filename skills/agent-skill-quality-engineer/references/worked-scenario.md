@@ -4,7 +4,7 @@
 Task: revise one skill after a real failure in Claude Code.
 
 ## Near-miss request
-Not this task: review ordinary React code quality.
+Not this task: review ordinary application code quality.
 
 ## Domain-specific procedure
 Inspect exactly one skill and 1–3 reputable reference implementations. Check YAML, package paths, description overlap, self-contained references and safe untrusted-source handling. Collect natural-use examples. Only run paid evaluations with explicit authorization; static checker success is not model effectiveness.

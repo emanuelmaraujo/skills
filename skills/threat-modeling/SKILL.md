@@ -5,6 +5,10 @@ description: "Modela ameaças defensivamente para novos sistemas e alterações 
 
 # threat-modeling
 
+## Contexto de aplicação
+
+Identifique ativos, atores e fronteiras relevantes à mudança. Ajuste a técnica de modelagem ao sistema e à maturidade da documentação.
+
 ## Procedimento
 
 1. Delimite ativos, atores, dependências e dados sensíveis. Desenhe fluxos e fronteiras de confiança, incluindo integrações externas e acessos administrativos.

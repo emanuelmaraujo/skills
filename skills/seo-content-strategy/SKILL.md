@@ -5,6 +5,10 @@ description: "Use for keyword and intent research, topic clusters, content brief
 
 # seo-content-strategy
 
+## Project context
+
+Identify audience, information needs, publishing capacity and topic constraints. Organize editorial decisions around actual demand and useful evidence.
+
 ## Purpose
 Plan original, user-helpful editorial coverage backed by evidence and product expertise.
 

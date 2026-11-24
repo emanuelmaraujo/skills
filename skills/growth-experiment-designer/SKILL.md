@@ -5,6 +5,10 @@ description: "Use for A/B test design, randomization, sample planning, guardrail
 
 # growth-experiment-designer
 
+## Project context
+
+Identify the decision, eligible population and assignment unit. Adapt the experiment to the channel, traffic and risk of interference.
+
 ## Purpose
 Measure causal impact with predeclared hypotheses and fair comparisons.
 

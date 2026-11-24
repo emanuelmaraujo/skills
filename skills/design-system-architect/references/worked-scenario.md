@@ -1,7 +1,7 @@
 # Worked scenario — design-system-architect
 
 ## Appropriate request
-Task: standardize spacing and button variants across existing React screens.
+Task: standardize spacing and button variants across existing interface screens.
 
 ## Near-miss request (different skill)
 Not this task: invent a new visual brand without implementation.

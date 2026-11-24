@@ -5,6 +5,10 @@ description: "Melhora a operação de APIs, workers e serviços quando a tarefa 
 
 # service-reliability-observability
 
+## Contexto de aplicação
+
+Identifique serviços, jornadas críticas e sinais que a operação já coleta. Ajuste indicadores e alertas ao volume, ao impacto e à capacidade de acompanhamento.
+
 ## Procedimento
 
 1. Defina a jornada e um indicador observável. Para APIs, considere disponibilidade e latência. Para workers, inclua idade do job mais antigo, tempo até conclusão, retries e falhas definitivas. Documente janela e denominador.

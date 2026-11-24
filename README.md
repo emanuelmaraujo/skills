@@ -88,7 +88,7 @@ See the [catalog audit and routing decisions](docs/skills-audit-2026-11-24.md).
 
 Backend and security workflows draw on [wshobson/agents](https://github.com/wshobson/agents), [OWASP Secure Agent Playbook](https://github.com/OWASP/secure-agent-playbook), [Trail of Bits](https://github.com/trailofbits/skills) and the standards cited by each skill. Community discussions on Reddit and Hacker News informed discovery and evaluation practices.
 
-Structured inspiration and candidate stacks: [Atlas de Web Design & IA](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330). Prior reviews are linked there. Third-party tools remain subject to current license, availability, cost and security review.
+Use the project context in each skill to choose tools and evidence appropriate to the work. Third-party tools remain subject to current license, availability, cost and security review.
 
 ## Scope
 

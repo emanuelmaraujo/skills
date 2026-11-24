@@ -5,6 +5,10 @@ description: "Organiza preparação e resposta defensiva a incidentes de seguran
 
 # security-incident-response
 
+## Contexto de aplicação
+
+Identifique responsáveis, critérios de severidade, fontes de evidência e procedimentos vigentes. Ajuste a resposta às autorizações e dependências do ambiente.
+
 ## Procedimento
 
 1. Registre alerta, hora e fuso, ativos, fonte, impacto e responsável. Classifique severidade e incerteza. Preserve evidências e registre acessos e alterações. Evite colar segredos ou dados pessoais em tickets.

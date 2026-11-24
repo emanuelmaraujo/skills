@@ -5,6 +5,10 @@ description: "Use to review a diff or pull request against its specification and
 
 # engineering-independent-review
 
+## Project context
+
+Identify the change objective, expected behavior, affected interfaces and verification available for this project before assigning severity.
+
 ## Purpose
 Expose actionable correctness and maintainability problems rather than merely approving AI-generated code.
 

@@ -5,6 +5,10 @@ description: "Aplica requisitos mínimos de segurança ao implementar ou revisar
 
 # secure-coding-baseline
 
+## Contexto de aplicação
+
+Identifique linguagem, tipos de entrada, dados sensíveis e capacidades do ambiente. Selecione controles relevantes para a mudança e para as fronteiras reais.
+
 ## Procedimento
 
 1. Identifique entradas, dados sensíveis e fronteiras de confiança. Valide formato, tipo e tamanho no servidor e codifique a saída conforme o contexto. Use consultas parametrizadas e bibliotecas consolidadas para criptografia.
