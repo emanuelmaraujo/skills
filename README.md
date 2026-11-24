@@ -1,8 +1,8 @@
 # Web Experience Agent Skills
 
-A focused, **framework-aware** library of modular [Agent Skills](https://agentskills.io/specification) for premium web experiences, SaaS dashboards, 3D and 2D animation, and quality engineering.
+A focused, **framework-aware** library of modular [Agent Skills](https://agentskills.io/specification) for premium web experiences, SaaS dashboards, 3D and 2D animation, backend development, and defensive security.
 
-**122 skills** (28 curated and 94 Blender skills). Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
+**36 skills**. Each skill lives in `skills/<skill-name>/SKILL.md`. This is a research-backed **v1 proposal**: instructions have been schema-reviewed and are not automatically proven successful in a live product.
 
 ## Quick start
 
@@ -63,17 +63,24 @@ Read [quality gates](docs/quality-gates.md), [architecture](docs/architecture.md
 - [logo-motion-design](skills/logo-motion-design/SKILL.md) creates minimalist transparent brand motion from the approved vector.
 - [logo-motion-review](skills/logo-motion-review/SKILL.md) checks timing, optical alignment, fidelity and alpha.
 
-## Blender and 3D production
+## Backend, APIs and defensive security
 
-The 94 Blender skills are imported from [arjun988/blender-skills](https://github.com/arjun988/blender-skills/tree/904f095d8f36a6e72adaebb08d07f884a074743d) under the [MIT license](docs/blender-skills-LICENSE), with their reference files. Start with [blender-director](skills/blender-director/SKILL.md) for routing. Follow the [upstream Blender MCP setup guide](https://github.com/arjun988/blender-skills/blob/904f095d8f36a6e72adaebb08d07f884a074743d/docs/BLENDER_MCP_SETUP.md) for live execution.
-
-For web 3D assets, use [asset optimization](skills/asset-optimization/SKILL.md) and [export pipeline](skills/export-pipeline/SKILL.md). The [upstream catalog](https://github.com/arjun988/blender-skills/blob/904f095d8f36a6e72adaebb08d07f884a074743d/SKILLS_GUIDE.md) lists specialists by production stage, art style, and genre.
+- [backend-service-engineering](skills/backend-service-engineering/SKILL.md) — Implementa e evolui serviços backend, workers e fluxos de dados quando a tarefa envolve consistência, transações, filas, migrações ou observabilidade.
+- [api-contract-design](skills/api-contract-design/SKILL.md) — Define e revisa contratos REST e webhooks quando a tarefa envolve OpenAPI, erros, paginação, idempotência ou compatibilidade.
+- [api-security-review](skills/api-security-review/SKILL.md) — Revisa defensivamente código e configuração de APIs quando a tarefa envolve autorização por recurso, separação de tenants, exposição de dados ou limites operacionais.
+- [secure-coding-baseline](skills/secure-coding-baseline/SKILL.md) — Aplica requisitos mínimos de segurança ao implementar ou revisar alterações de código em aplicações e serviços.
+- [vulnerability-triage-remediation](skills/vulnerability-triage-remediation/SKILL.md) — Triage alertas de vulnerabilidades existentes, avalia exposição e dependências afetadas e acompanha correção ou mitigação.
+- [devsecops-pipeline-hardening](skills/devsecops-pipeline-hardening/SKILL.md) — Revisa e melhora CI/CD quando a tarefa envolve scanners defensivos, permissões, segredos, SBOM, dependências ou proveniência de artefatos.
+- [pentest-governance-remediation](skills/pentest-governance-remediation/SKILL.md) — Prepara escopo de pentest autorizado e transforma relatórios já existentes em triagem, correções e validação defensiva.
+- [cybersecurity-baseline](skills/cybersecurity-baseline/SKILL.md) — Avalia controles mínimos de segurança organizacional quando a tarefa envolve inventário, identidade, backups, monitoramento ou resposta a incidentes.
 
 ## Skill ecosystem monitoring
 
 18 curated upstreams are tracked in [upstreams.json](upstreams.json). [Monitor workflow](.github/workflows/monitor-upstreams.yml) runs weekly **after merger to default branch**, using read-only GitHub metadata and posting a review issue. It does **not** auto-install, copy or execute third-party skills. See [governance](docs/upstream-governance.md). Static structure validation runs on PRs via [CI](.github/workflows/validate-skills.yml). Real activation/effectiveness evaluations remain pending.
 
 ## Research provenance
+
+Backend and security workflows draw on [wshobson/agents](https://github.com/wshobson/agents), [OWASP Secure Agent Playbook](https://github.com/OWASP/secure-agent-playbook), [Trail of Bits](https://github.com/trailofbits/skills) and the standards cited by each skill. Community discussions on Reddit and Hacker News informed discovery and evaluation practices.
 
 Structured inspiration and candidate stacks: [Atlas de Web Design & IA](https://app.notion.com/p/413ae098633781629fa8f169e7ea8330). Prior reviews are linked there. Third-party tools remain subject to current license, availability, cost and security review.
 
