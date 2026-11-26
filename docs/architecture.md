@@ -23,9 +23,23 @@
 - Need signup/affiliate/checkout friction → `web-conversion-ux`
 - Need multiple disciplines together → `web-design-orchestrator`
 
-## Overlap rule
+## Decision ownership
 
-Orchestrator **routes**; specialist **executes**. Builder includes baseline accessibility and performance; deep audits are separate only when triggered by risk, acceptance criteria or complexity.
+Follow the [shared execution and delivery guide](quality-gates.md) for precedence, mode and reporting. An orchestrator coordinates one owner per decision.
+
+| Decision | Owner |
+| --- | --- |
+| Approved visual direction and channel adaptation | `product-art-direction` |
+| Tokens and reusable components | `design-system-architect` |
+| Operational workflow and screen states | `premium-dashboard-builder` |
+| Rendered comparisons and breakpoint evidence | `frontend-visual-qa` |
+| WCAG and assistive technology evidence | `web-accessibility-audit` |
+| Runtime metrics and measurement conditions | `web-performance-engineer` |
+| System-wide secure coding and output boundaries | `secure-coding-baseline` |
+| Migration consistency, concurrency and migration-specific authorization | `backend-service-engineering` |
+| Red/green validity and public behavior tests | `engineering-tdd-implementer` |
+
+Builders apply the project baseline. Specialists supply deeper evidence when required by risk, acceptance criteria or the task. Reuse evidence when conditions match.
 
 ## Change policy
 

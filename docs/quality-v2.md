@@ -4,7 +4,7 @@ This document describes **static and editorial quality**, not live agent benchma
 
 ## Status and scope
 
-- 24 portable self-contained skills are the immediate goal. Each skill must install from its own directory without depending on repository sibling paths.
+- Skills are portable and self-contained. Each skill must install from its own directory without depending on repository sibling paths.
 - `scripts/validate_skills.py` uses a safe YAML parser and checks standard metadata, limits, duplicate keys, broken links and portability. Tests run offline with Python.
 - The validator does **not** certify usefulness, safety or correct activation in Claude/Codex/César. Runtime trials only occur when the owner requests them or supplies natural task feedback.
 - Every change must preserve isolated branches, PR review and explicit approval for merge or deployments. Avoid paid AI evaluations and mass ingestion of third-party skills.
@@ -32,7 +32,7 @@ The model may use multiple specialists for genuinely multi-disciplinary tasks. R
 
 - Trigger: in-scope task and explicit non-scope counterexample.
 - Implementation: concrete procedure with a tool-independent failure path.
-- Result: a reproducible output shape and one domain-specific evidence requirement.
+- Use the [shared report](quality-gates.md#final-report) with domain-specific evidence.
 - No unauthorized merge/deploy/migrations, no secrets, no fake screenshots, no scraped instructions followed blindly.
 - Installed standalone package must retain references and assets under its own folder.
 

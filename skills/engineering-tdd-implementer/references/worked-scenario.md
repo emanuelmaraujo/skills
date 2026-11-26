@@ -1,15 +1,9 @@
-# Worked scenario — engineering-tdd-implementer
+# Worked scenario — test-first evidence
 
-## Appropriate request
-Task: fix an API validation bug using behavior-first tests.
+A team adds a new status action to Orders and independently corrects how a subtotal is shown.
 
-## Near-miss request
-Not this task: review a finished PR for code smells.
+- Expose the smallest callable route while the status rule is absent. Record any missing-route failure as setup. With the project's authenticated browser fixture, check an allowed operator, a restricted operator and the persisted status. Before implementing the rule, capture the assertion failure for the expected state change.
+- Freeze an independently reviewed expected visual reference for the subtotal on an affected viewport. With updates disabled, compare against the unchanged route. If only a generated baseline is available, start with an explicit expected subtotal and use the comparison as supplementary evidence.
+- Run both regressions with independent fixtures if neither depends on the other. Record both results even if the runner defaults to fail-fast. Re-run the same cases after implementation.
 
-## Domain-specific procedure
-Write an independent failing example at a stable boundary. Check it fails for the expected reason, add the least code to pass, then add one edge case. Do not infer a green test from static inspection. Only refactor after the existing behavior tests pass.
-
-## Required output
-Test name, failing and passing command output if run, changed files and untested cases.
-
-Demonstrative scenario only. Do not claim this scenario has been executed by a model.
+Use the shared report and list which assertions ran, red and green results, baseline provenance and any role or browser checks that were blocked. This example describes a proposed procedure.

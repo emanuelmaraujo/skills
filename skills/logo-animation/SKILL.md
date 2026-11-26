@@ -5,6 +5,8 @@ description: "Cria, implementa ou revisa animação de logo a partir de marca ap
 
 # Animação de logos
 
+Aplique primeiro o [guia compartilhado de execução e entrega](references/quality-gates.md).
+
 ## Contexto de aplicação
 
 Identifique ativo autorizado, público, canal e possibilidades de reprodução e edição. Escolha técnicas e formatos pelas restrições do destino.
@@ -14,8 +16,8 @@ Identifique ativo autorizado, público, canal e possibilidades de reprodução e
 Para assinaturas vetoriais, fundo transparente ou revisão de uma animação pronta, consulte [motion vetorial e revisão](references/vector-motion-and-review.md). Em revisão, use o master aprovado como referência e decodifique o alfa antes de aprovar o export. Ao exportar para sobreposição, use um formato com alfa compatível com o editor e confira em fundos claros e escuros.
 
 1. Confirme o vetor ou PNG oficial, o canal, a proporção, a duração, a área segura e se há assinatura sonora licenciada. Se houver apenas PNG, anime o ativo inteiro ou suas camadas fornecidas. Se o efeito exigir paths separados, peça o vetor ou trate a reconstrução como proposta. Preserve formas, espaçamento e cores no quadro final. Trabalhe numa cópia para separar camadas.
-2. Defina um gesto que nasça da marca: aparecimento por máscara, traço que percorre um contorno real, montagem das partes ou mudança controlada de luz. Proponha início, transformação e repouso, em quadros ou segundos. Para web, comece com 0,6–1,2 s quando o layout permitir. Para vinheta social, comece com 2–4 s e reserve leitura suficiente para a assinatura final. Ajuste ao pedido.
-3. Escolha o motor pelo formato e pela stack existente.
+2. Defina um gesto que nasça da marca: aparecimento por máscara, traço que percorre um contorno real, montagem das partes ou mudança controlada de luz. Proponha início, transformação e repouso, em quadros ou segundos. Use a duração do briefing ou do canal. Na ausência de referência, experimente 0,6–1,2 s na web e 2–4 s em vinhetas sociais. Reserve tempo suficiente para ler a assinatura final. Ajuste ao pedido.
+3. Escolha o motor pelo formato e pela stack existente. Use `web-motion-engineer` para comportamento de UI e `code-driven-motion-storytelling` para narrativa audiovisual.
 
 | Destino | Implementação |
 | --- | --- |
@@ -30,14 +32,4 @@ Para assinaturas vetoriais, fundo transparente ou revisão de uma animação pro
 
 ## Deliverables
 
-Entregue storyboard curto, duração/cadência, fonte editável se disponível e arquivo real no formato solicitado ou componente web executável. Inclua imagem de repouso e a origem da marca e do áudio quando pertinentes. Identifique como bloqueada qualquer validação ou exportação que dependa de ativo ou ferramenta indisponível.
-
-## Referências
-
-- [Remotion Agent Skills](https://www.remotion.dev/docs/ai/skills) para composição, animação por quadros, áudio e render.
-- [GSAP Agent Skills oficiais](https://github.com/greensock/gsap-skills) para timelines, SVG e integração web.
-- No repositório, use `web-motion-engineer` para padrões gerais de frontend e `code-driven-motion-storytelling` para peças narrativas. O escopo desta skill é a assinatura da marca.
-
-## Avaliação
-
-Veja os [casos de avaliação](references/evaluation-cases.md).
+Use o relatório compartilhado. Entregue storyboard curto, duração/cadência, fonte editável se disponível e arquivo real no formato solicitado ou componente web executável. Inclua imagem de repouso e a origem da marca e do áudio quando pertinentes. Identifique como bloqueada qualquer validação ou exportação que dependa de ativo ou ferramenta indisponível.

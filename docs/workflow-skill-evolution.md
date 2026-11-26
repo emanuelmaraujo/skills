@@ -19,7 +19,7 @@
 2. Abrir [issue de feedback](../issues/new/choose) com cenário, esperado e observado; se disponível, link para PR/execução.
 3. Selecionar **1–3 fontes de referência** consolidadas, priorizando documentação e SKILL.md de autores conhecidos: Anthropic, OpenAI Plugins, Matt Pocock, Corey Haines, Vercel, etc. Consultar apenas os arquivos relevantes; evitar ler centenas de skills.
 4. Comparar escopo, abordagem, exemplos, limites e licença. **Nunca copiar automaticamente** scripts, propagandas embutidas, tokens ou instruções inseguras de terceiros.
-5. Criar branch e PR de melhoria **apenas daquela skill**, acrescentando referências/exemplos sob demanda se necessário.
+5. Criar branch e PR com o escopo do feedback. Quando o problema atravessar várias skills, edite o [guia compartilhado](quality-gates.md), sincronize os pacotes e ajuste os passos específicos afetados.
 6. Executar só verificações estáticas leves locais/CI existentes. Quando você já estiver usando a skill com César/Claude/Codex, coletar feedback natural da execução; avaliações adicionais com IA apenas quando você pedir explicitamente.
 7. Revisar o diff e fazer merge somente após autorização. Atualizar instalações globais de forma explícita, não por mudança automática silenciosa.
 
