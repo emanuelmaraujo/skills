@@ -1,44 +1,65 @@
-# Routing matrix (initial: 2026-11-26)
+# Routing policy (2026-11-26)
 
-Start from this table, then correct it with `$HOME/cezar-platform/var/scoreboard.md` (real success
-rate, rework and review outcome per runner/model in this workspace). When the two disagree for a
-task type with at least 5 settled tasks, the scoreboard wins; note it in the plan.
+Decide every subtask on five inputs, in this order, and write the choice and its reason in the plan:
+**hard rules → risk → complexity → availability → measured performance.** Tools needed are a filter
+inside each step. All three providers are first-class executors; none is "only a reviewer".
 
-## Models verified as runnable headless in cezar (live probe, 2026-11-26)
-Each was called headless as the `cezar` user and answered. Listed ≠ usable: re-probe after CLI updates.
-- `claude` (Claude Max): `opus` (Opus 5.5), `fable` (Fable 5.2), `sonnet` (Sonnet 5.5), `haiku` (Haiku 5.5).
-  Effort low…max. Fable spends the Max allowance fastest: only for the hardest problems.
-- `codex` (ChatGPT Plus): `gpt-6.2-sol` (CLI default), `gpt-6.2-astra`, `gpt-6.1-terra`, `gpt-6-luna`
-  (older `gpt-6.1-sol`, `gpt-6-*`, `gpt-5.6-*` still listed). Effort low…max.
-- `antigravity` (Google AI Pro via `agy` 1.5.18): `gemini-4-carbon-*`, `gemini-4-neon-*`, `gemini-4-argon-*`,
-  `gemini-4-hydrogen-*`, `gemini-3.8-flash-*`, `gemini-pro-orchestrator*`; the effort is the slug suffix.
-  Gemini CLI is not usable: it no longer accepts a personal Google sign-in.
+## 1. Hard rules (never overridden)
+- Frontend (components, pages, styles, templates, design tokens, UI copy in components): **claude or
+  codex only**. The scope guard fails any run where antigravity changed such a file, fallback included.
+  Gemini may audit, test and propose frontend changes in docs.
+- The reviewer is a provider different from the implementer.
+- A subtask that needs a tool a runner lacks in this workspace goes to a runner that has it
+  (browser automation: claude or codex; everything else: all three).
 
-## Defaults by work type
-| Work | First choice | Second choice | Notes |
-|---|---|---|---|
-| Supervision, planning, hard architecture | claude `opus` high | codex `gpt-6.2-astra` high | Routine coordination: claude `sonnet`; a problem two attempts failed: claude `fable` |
-| Frontend, UI/UX, design system, a11y, mobile | claude `opus` (complex) / `sonnet` | codex `gpt-6.2-sol` | **Never antigravity** (guard-enforced) |
-| Backend, APIs, DB, Supabase, business rules | codex `gpt-6.2-sol` high | antigravity `gemini-4-neon-high` (independent module) | |
-| Payments, idempotency, reconciliation, auth, security fixes | codex `gpt-6.2-astra` high | claude `opus` | Cross-provider review mandatory |
-| DevOps, CI/CD, infra, refactors, hard debugging, branch integration | codex `gpt-6.2-sol` high | claude `opus` | |
-| Large-repo investigation, dependency analysis | antigravity `gemini-4-carbon-high` | codex `gpt-6.2-sol` | Long context |
-| Tests, edge cases, RLS and multi-tenant audit, performance | antigravity `gemini-4-carbon-high` | codex | Audit is read-only |
-| Docs, research, simple scans, early read-only investigations | antigravity `gemini-4-hydrogen-medium` / `gemini-3.8-flash-medium` | claude `haiku`, codex `gpt-6-luna` | Cheapest capable |
-| Independent review | a provider different from the implementer | | Claude→Codex, Codex→Claude/Gemini Carbon, Gemini→Codex |
+## 2. Risk
+| Risk | Areas | Minimum |
+|---|---|---|
+| High | payments, auth, tenant isolation, migrations, real data, security fixes, infra | implementer at the "strong" tier, effort high; cross-provider review mandatory; human gate for anything irreversible |
+| Medium | business rules, APIs, integrations, concurrency | "standard" tier, effort medium-high; workflow review |
+| Low | docs, copy, tests for existing behavior, mechanical refactors, investigations | "fast" tier |
 
-## Allowance
-Check `liveUsage.limits` of your own task (five_hour, seven_day). Above 80% on a provider, route the next
-non-frontend subtasks to another provider or a cheaper model of the same one, and say so in the plan.
+## 3. Complexity → tier → model
+| Tier | When | claude | codex | antigravity |
+|---|---|---|---|---|
+| Exceptional | two strong attempts failed, or a novel hard design/debugging problem | `fable` high | `gpt-6.2-astra` xhigh | `gemini-4-carbon-high` |
+| Strong | cross-module design, hard debugging, high risk | `opus` high | `gpt-6.2-astra` high | `gemini-4-carbon-high` |
+| Standard | a well-specified feature or fix in one area | `sonnet` / `opus` medium | `gpt-6.2-sol` medium-high | `gemini-4-neon-high` |
+| Fast | investigations, docs, scans, simple tests | `haiku` | `gpt-6-luna` | `gemini-4-hydrogen-medium`, `gemini-3.8-flash-medium` |
 
-## Escalation
-Second failure on the same subtask: raise the model or effort within the provider (sonnet→opus,
-codex sol→astra, neon→carbon, opus→fable). Third: switch provider. Then record a blocker; do not loop.
+Roles: the **manager** is claude `sonnet`. The **technical lead** of a complex task is claude `opus`;
+a backend-only front may be led by codex `gpt-6.2-sol` or antigravity `gemini-4-carbon-high` (that lead
+dispatches its own children). **Executors:** codex `gpt-6.2-sol` is the generalist; antigravity
+`gemini-4-carbon-high` / `gemini-4-neon-high` are main engineering executors for backend, data, tests,
+performance and large-repo work; claude owns frontend and hard architecture.
+**Escalation:** second failure → next tier, same provider (sonnet→opus→fable, sol→astra, neon→carbon);
+third → another provider; then a named blocker. Never loop.
 
-## Public evidence behind the defaults (to be confirmed)
-Aggregators agree on the ordering but not on the numbers (November 2026). Terminal-Bench 4.1 (agent plus
-model): Fable 5.2 and Opus 5.5 ~65.8%, GPT-6.2 Astra ~62.1%, GPT-6.2 Sol ~61.5%; Gemini 4 Carbon ~65% on
-4.0. GPT-6.2 Sol lands within 0.4 points of Astra on FrontierCode 2.0 at about a fifth of the cost, hence the
-default; Fable 5.2 leads FrontierCode 2.0 (50.2%) but its edge over Opus 5.5 on Terminal-Bench is small. SWE-bench Verified is saturated and its figures conflict. Neon is cheaper and
-faster than Carbon at similar index scores; Hydrogen is the fastest and cheapest. These are model and
-harness results, not this workspace's: the scoreboard is the tie-breaker.
+## 4. Availability (the signals that exist — never API list prices)
+- Your task's `liveUsage.limits` (`five_hour`, `seven_day` utilization and `resetsAt`) for claude, and
+  the usage-limit stops recorded on runs for every provider (`cezar usage` on the cockpit host).
+- Above 80% in a provider's short window: send the next non-frontend subtasks to another provider or a
+  lower tier; frontend waits for claude/codex rather than going to antigravity.
+- A provider that stopped on a usage limit is unavailable until its reset; cezar resumes the stopped run
+  at the reset (`autoResumeOnUsageLimit`).
+- Spread parallel children across providers so one allowance is not the bottleneck.
+
+## 5. Measured performance (decides ties, then overrides the table)
+`$HOME/cezar-platform/var/scoreboard.md` gives per runner·model: tasks, success, failures, median time,
+rework iterations and review verdicts received. With ≥5 settled tasks of a work type, the scoreboard
+wins over this table; record it in the plan.
+
+## Models verified in cezar (2026-11-26)
+Headless probe answered for each, as the `cezar` user. A probe is not operational proof: the
+homologation runs record which models completed real tasks (see the platform's HOMOLOGACAO.md).
+- claude (Claude Max): `opus` (Opus 5.5), `fable` (Fable 5.2), `sonnet` (Sonnet 5.5), `haiku` (Haiku 5.5).
+- codex (ChatGPT Plus): `gpt-6.2-sol` (CLI default), `gpt-6.2-astra`, `gpt-6.1-terra`, `gpt-6-luna`.
+- antigravity (Google AI Pro via `agy`): `gemini-4-carbon-high`, `gemini-4-neon-medium`,
+  `gemini-4-argon-medium`, `gemini-4-hydrogen-low`, `gemini-3.8-flash-low`, `gemini-pro-orchestrator`
+  (other effort suffixes listed). Gemini CLI is unusable: it no longer accepts a personal sign-in.
+
+## Public evidence (background only)
+Terminal-Bench 4.1 (agent plus model, Nov 2026): Fable 5.2 and Opus 5.5 ~65.8%, GPT-6.2 Astra ~62.1%,
+GPT-6.2 Sol ~61.5%; Gemini 4 Carbon ~65% on 4.0. GPT-6.2 Sol is within 0.4 points of Astra on
+FrontierCode 2.0. Fable 5.2 leads FrontierCode 2.0 but its Terminal-Bench edge over Opus is small. These
+are harness results, not this workspace's.
