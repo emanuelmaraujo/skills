@@ -6,6 +6,8 @@ license: MIT
 
 # Criação de logos
 
+Aplique primeiro o [guia compartilhado de execução e entrega](references/quality-gates.md).
+
 ## Contexto de aplicação
 
 Identifique público, aplicações, escala, contraste e ativos da marca. Use as restrições de produção para decidir quais variantes precisam existir.
@@ -30,12 +32,8 @@ Identifique público, aplicações, escala, contraste e ativos da marca. Use as 
 
 ## Deliverables
 
-Prévia visual e rationale em português, SVG master e variantes contratadas. Exporte PNG transparente, favicon ou PDF apenas conforme o uso. Registre origem dos ativos, resultados observados, lacunas e limitações de renderização. Para animar uma marca aprovada, encaminhe à skill `logo-animation` e informe quais grupos do SVG podem mover de forma independente.
+Use o relatório compartilhado. Prévia visual e rationale em português, SVG master e variantes contratadas. Exporte PNG transparente, favicon ou PDF apenas conforme o uso. Registre origem dos ativos, resultados observados, lacunas e limitações de renderização. Para animar uma marca aprovada, encaminhe à skill `logo-animation` e informe quais grupos do SVG podem mover de forma independente.
 
 ## Proveniência
 
 Adaptação da skill [Logo Design de kaankiziltug](https://github.com/kaankiziltug/logo-design-skill/tree/main/skills/logo-design) sob a [licença MIT](LICENSE). O fluxo é autocontido. A biblioteca de logotipos, os scripts e os templates do upstream podem ser consultados na origem conforme a necessidade e a licença aplicável.
-
-## Avaliação
-
-Veja os [casos de avaliação](references/evaluation-cases.md).

@@ -4,7 +4,7 @@ import pathlib
 
 root = pathlib.Path(__file__).resolve().parents[1]
 for skill in (root / 'skills').glob('*/SKILL.md'):
-    content = skill.read_text()
+    content = skill.read_text(encoding='utf-8')
     for name in ['quality-gates.md', 'evaluation.md']:
         if f'(references/{name})' in content:
             target = skill.parent / 'references' / name

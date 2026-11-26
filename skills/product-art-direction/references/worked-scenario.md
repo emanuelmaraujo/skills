@@ -1,16 +1,7 @@
-# Worked scenario — product-art-direction
+# Worked scenario — approved brand, order queue and receipt
 
-## Appropriate request
-Task: choose a visual language for a physical NFC product website.
+The approved product identity already defines typography, colors and wordmark. Apply the same identity to an order queue and its receipt. Show a busy queue with long item names, a clear primary action and permission-denied feedback. Use the supported viewport matrix and approved tokens.
 
-## Near-miss request (different skill)
-Not this task: repair CSS variables that are already specified.
+For the receipt, request the printer model and supported paper sizes from the project context. Check the printable width on each supported profile. Use monochrome hierarchy, test accented names and long items, and confirm totals and scanability. Capture a physical proof or mark printer-dependent checks BLOCKED and include the scale-correct preview.
 
-## Concrete procedure
-Offer 2 distinct options with a short rationale: editorial/product photography vs technical/product visualization. For each: hero idea, visual vocabulary, type hierarchy, accent usage, illustration/3D decision, mobile fallback and one visual anti-pattern to avoid. Select based on product subject and audience.
-
-## Output acceptance
-Direction brief and chosen direction with explicit non-goals.
-
-## Evidence discipline
-This example is instructional, not an executed run. Report PASS/FAIL/SKIP/BLOCKED based on actual tool access; do not fabricate benchmarks or screenshots.
+Use the shared report with the approved source, channel adaptations, prototype evidence and handoff to the component and print owners. This example describes a proposed procedure.
