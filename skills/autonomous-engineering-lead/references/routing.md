@@ -8,7 +8,8 @@ inside each step. All three providers are first-class executors; none is "only a
 - Frontend (components, pages, styles, templates, design tokens, UI copy in components): **claude or
   codex only**. The scope guard fails any run where antigravity changed such a file, fallback included.
   Gemini may audit, test and propose frontend changes in docs.
-- The reviewer is a provider different from the implementer.
+- The reviewer is a provider different from the implementer, on the rotation claude→codex, codex→antigravity, antigravity→claude.
+- All three providers work at once: each owns a front in flight together.
 - A subtask that needs a tool a runner lacks in this workspace goes to a runner that has it
   (browser automation: claude or codex; everything else: all three).
 
